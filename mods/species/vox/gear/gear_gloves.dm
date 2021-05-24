@@ -8,4 +8,13 @@
 
 /obj/item/clothing/gloves/vox/Initialize()
 	. = ..()
-	bodytype_restricted = list(BODYTYPE_VOX)
+	LAZYSET(sprite_sheets, BODYTYPE_VOX, 'mods/species/vox/icons/clothing/gloves.dmi')
+
+/datum/gear/gloves/vox
+	sort_category = "Xenowear"
+	category = /datum/gear/gloves/vox
+	whitelisted = list(SPECIES_VOX)
+
+/datum/gear/gloves/vox/insuls
+	display_name = "insulated gauntlets (Vox)"
+	path = /obj/item/clothing/gloves/vox

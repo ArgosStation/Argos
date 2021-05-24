@@ -104,6 +104,7 @@ h1.alert, h2.alert		{color: #000000;}
 .rough					{font-family: "Trebuchet MS", cursive, sans-serif;}
 .say_quote				{font-family: Georgia, Verdana, sans-serif;}
 .adherent				{color: #526c7a;}
+.skrell					{color: #00ced1;}
 
 .chinese				{color: #d4a52a;}
 .indian					{color: #422863;}

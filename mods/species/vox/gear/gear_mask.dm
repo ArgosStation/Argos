@@ -11,11 +11,12 @@
 	flags_inv = 0
 	body_parts_covered = 0
 	filtered_gases = list(/decl/material/gas/oxygen)
+	bodytype_restricted = list(BODYTYPE_VOX)
 
 /obj/item/clothing/mask/gas/vox/Initialize()
 	. = ..()
-	bodytype_restricted = list(BODYTYPE_VOX)
-	
+	LAZYSET(sprite_sheets, BODYTYPE_VOX, 'mods/species/vox/icons/clothing/mask_breath.dmi')
+
 /obj/item/clothing/mask/gas/swat/vox
 	name = "alien mask"
 	desc = "Clearly not designed for a human face."
@@ -34,4 +35,4 @@
 
 /obj/item/clothing/mask/gas/swat/vox/Initialize()
 	. = ..()
-	bodytype_restricted = list(BODYTYPE_VOX)
+	LAZYSET(sprite_sheets, BODYTYPE_VOX, 'mods/species/vox/icons/clothing/mask.dmi')

@@ -1,0 +1,13 @@
+#ifndef MODPACK_SKRELL
+#define MODPACK_SKRELL
+#include "_skrell.dm"
+#include "datum\culture.dm"
+#include "datum\language.dm"
+#include "datum\locations.dm"
+#include "datum\factions.dm"
+#include "datum\species.dm"
+#include "datum\species_bodytypes.dm"
+#include "datum\sprite_accessory.dm"
+#include "datum\clothing_overrides.dm"
+#include "organs\organs_internal.dm"
+#endif

@@ -3,10 +3,11 @@
 	desc = "A pair of heavy, jagged, armoured foot pieces, seemingly suitable for a velociraptor."
 	icon = 'mods/species/vox/icons/clothing/boots_vox.dmi'
 	action_button_name = "Toggle the magclaws"
+	bodytype_restricted = list(BODYTYPE_VOX)
 
 /obj/item/clothing/shoes/magboots/vox/Initialize()
 	. = ..()
-	bodytype_restricted = list(BODYTYPE_VOX)
+	LAZYSET(sprite_sheets, BODYTYPE_VOX, 'mods/species/vox/icons/clothing/boots_vox.dmi')
 
 /obj/item/clothing/shoes/magboots/vox/attack_self(mob/user)
 	if(magpulse)
@@ -45,3 +46,12 @@
 	. = ..()
 	if (magpulse)
 		to_chat(user, "It would be hard to take these off without relaxing your grip first.")//theoretically this message should only be seen by the wearer when the claws are equipped.
+
+/datum/gear/shoes/vox
+	sort_category = "Xenowear"
+	category = /datum/gear/shoes/vox
+	whitelisted = list(SPECIES_VOX)
+
+/datum/gear/shoes/vox/magboots
+	display_name = "magclaws (Vox)"
+	path = /obj/item/clothing/shoes/magboots/vox
