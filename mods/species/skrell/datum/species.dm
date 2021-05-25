@@ -4,11 +4,11 @@
 		"a toddler" =       3,
 		"a child" =         7,
 		"an adolescent" =  13,
-		"a young adult" =  18,
+		"a young adult" =  19,
 		"an adult" =       25,
-		"middle-aged" =    50,
-		"aging" =         150,
-		"elderly" =       260
+		"middle-aged" =    45,
+		"aging" =          60,
+		"elderly" =        90
 	)
 
 /decl/species/skrell
@@ -124,3 +124,11 @@
 		/decl/emote/exertion/biological/breath,
 		/decl/emote/exertion/biological/pant
 	)
+
+/mob/living/carbon/human/skrell/Initialize(mapload, new_species)
+	h_style = "Skrell Male Tentacles"
+	hair_colour = "skrell"
+	skin_colour = "skrell"
+	LAZYSET(traits, /decl/trait/malus/animal_protein, TRAIT_LEVEL_MAJOR)
+	. = ..(mapload, SPECIES_SKRELL)
+
