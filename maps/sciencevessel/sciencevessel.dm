@@ -6,7 +6,6 @@
 	#include "../../mods/species/ascent/_ascent.dme"
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/government/ruins/ec_old_crash/ec_old_crash.dm"
-	#include "../../mods/content/corporate/_corporate.dme"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"
 	#include "../../mods/species/utility_frames/_utility_frames.dme"
 	#include "../../mods/species/tajaran/_tajaran.dme"
@@ -43,7 +42,6 @@
 	#include "sciencevessel_shuttles.dm"
 	#include "sciencevessel_objects.dm"
 	#include "sciencevessel_overmap.dm"
-	#include "sciencevessel_shuttles.dm"
 
 	#include "jobs/_jobs.dm"
 	#include "jobs/command.dm"
