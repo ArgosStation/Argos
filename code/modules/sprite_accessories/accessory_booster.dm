@@ -7,7 +7,6 @@
 	disallows = list(
 		/datum/sprite_accessory/marking/booster/ears,
 		/datum/sprite_accessory/marking/booster/horns/ram
-	blend = ICON_MULTIPLY
 	)
 draw_target = MARKING_TARGET_HAIR
 
