@@ -271,6 +271,9 @@ u
 /area/sciencevessel/maint/aftstar/decktwo
 	name = "\improper Second Deck Maintenance - Aft Starboard"
 
+/area/sciencevessel/engineering/booster/decktwo
+	name = "\improper Second Deck - Relay Closet"
+
 /area/sciencevessel/medical/entry
 	name = "\improper Second Deck - Infirmary Entrance"
 
