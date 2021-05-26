@@ -13,7 +13,7 @@
 /datum/sprite_accessory/marking/booster/horns
 	body_parts = list(BP_HEAD)
 	disallows = list(/datum/sprite_accessory/marking/booster/horns)
-	blend = ICON_MULTIPLY
+draw_target = MARKING_TARGET_HAIR
 
 /datum/sprite_accessory/marking/booster/ears/cat
 	icon_state = "ears_cat"
