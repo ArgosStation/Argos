@@ -8,10 +8,12 @@
 		/datum/sprite_accessory/marking/booster/ears,
 		/datum/sprite_accessory/marking/booster/horns/ram
 	)
+draw_target = MARKING_TARGET_HAIR
 
 /datum/sprite_accessory/marking/booster/horns
 	body_parts = list(BP_HEAD)
 	disallows = list(/datum/sprite_accessory/marking/booster/horns)
+draw_target = MARKING_TARGET_HAIR
 
 /datum/sprite_accessory/marking/booster/ears/cat
 	icon_state = "ears_cat"
@@ -22,6 +24,7 @@
 	icon_state = "ears_bun"
 	name = "Ear Biomods (Rabbit)"
 	icon = 'icons/mob/human_races/species/human/booster/ears_bun.dmi'
+
 
 /datum/sprite_accessory/marking/booster/horns/ram
 	icon_state = "horns_ram"
