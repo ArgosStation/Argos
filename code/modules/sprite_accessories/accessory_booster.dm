@@ -7,11 +7,13 @@
 	disallows = list(
 		/datum/sprite_accessory/marking/booster/ears,
 		/datum/sprite_accessory/marking/booster/horns/ram
+	blend = ICON_MULTIPLY
 	)
 
 /datum/sprite_accessory/marking/booster/horns
 	body_parts = list(BP_HEAD)
 	disallows = list(/datum/sprite_accessory/marking/booster/horns)
+	blend = ICON_MULTIPLY
 
 /datum/sprite_accessory/marking/booster/ears/cat
 	icon_state = "ears_cat"
@@ -22,6 +24,7 @@
 	icon_state = "ears_bun"
 	name = "Ear Biomods (Rabbit)"
 	icon = 'icons/mob/human_races/species/human/booster/ears_bun.dmi'
+
 
 /datum/sprite_accessory/marking/booster/horns/ram
 	icon_state = "horns_ram"
