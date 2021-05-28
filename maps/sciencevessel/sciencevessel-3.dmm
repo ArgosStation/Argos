@@ -454,7 +454,7 @@
 "IC" = (/obj/machinery/door/airlock/glass/civilian,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
 "IF" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/lattice,/turf/simulated/open,/area/sciencevessel/maint/forestar/deckone)
 "II" = (/obj/structure/bed/chair/office/comfy/blue,/obj/effect/floor_decal/spline/plain/black,/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/turf/simulated/floor/wood/mahogany,/area/sciencevessel/hop)
-"IM" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
+"IM" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/cable/green,/obj/machinery/power/sensor{id_tag = "deck_one_subgrid"},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "IW" = (/obj/effect/floor_decal/corner/blue/half{dir = 4},/obj/machinery/firealarm{dir = 4; pixel_x = 16},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone)
 "IZ" = (/obj/effect/floor_decal/corner/blue/half{dir = 4},/obj/machinery/alarm/monitor{dir = 4; pixel_x = -16},/turf/simulated/floor/tiled/dark,/area/sciencevessel/bridge)
 "Jb" = (/obj/effect/floor_decal/corner/red{dir = 9},/obj/machinery/alarm/monitor{dir = 4; pixel_x = -16},/turf/simulated/floor/tiled/dark,/area/sciencevessel/security/brig)

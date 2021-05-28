@@ -67,3 +67,15 @@
 	song = 'maps/sciencevessel/Banned_From_Argo.mp3'
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://www.youtube.com/watch?v=FH8lvwXx_Y8"
+
+/datum/gear/utility/guns
+	display_name = "guns"
+	cost = 4
+	sort_category = "Utility"
+	path = /obj/item/gun/projectile
+
+/datum/gear/utility/guns/New()
+	..()
+	var/guns = list()
+	guns["holdout pistol"] = /obj/item/gun/projectile/pistol/holdout
+	gear_tweaks += new/datum/gear_tweak/path(guns)
