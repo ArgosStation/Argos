@@ -57,7 +57,9 @@
 "ei" = (/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "2-8"},/obj/machinery/light/small{dir = 4; pixel_y = 0},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "ek" = (/obj/machinery/light{dir = 8},/obj/machinery/computer/modular/preset/security{dir = 4},/turf/simulated/floor/tiled/dark,/area/sciencevessel/forensics)
 "er" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
+"eG" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/hatch/yellow,/turf/simulated/floor/reinforced,/area/sciencevessel/engineering/bridgesolar)
 "eI" = (/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
+"eK" = (/obj/machinery/door/airlock/external/bolted{id_tag = "dock_solars_out"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/shield_diffuser,/obj/machinery/button/access/exterior{pixel_x = 20; pixel_y = -15; req_access = list("ACCESS_EXTERNAL")},/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/engineering/bridgesolar)
 "eL" = (/obj/structure/ship_munition/disperser_charge/emp,/obj/effect/floor_decal/industrial/hatch/blue,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/bridge/ofd)
 "eQ" = (/obj/effect/floor_decal/corner/blue/half{dir = 4},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
 "eU" = (/turf/simulated/wall/r_wall,/area/sciencevessel/security/brig)
@@ -84,7 +86,7 @@
 "gV" = (/obj/structure/table/standard,/turf/simulated/floor/tiled/monotile,/area/sciencevessel/bridge)
 "gZ" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall,/area/sciencevessel/engineering/techstorage)
 "hb" = (/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24; req_access = newlist()},/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
-"he" = (/obj/machinery/light/small{dir = 4; pixel_y = 0},/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
+"he" = (/obj/machinery/light/small{dir = 4; pixel_y = 0},/obj/machinery/alarm/monitor{dir = 8; pixel_x = 16},/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
 "hl" = (/obj/structure/table/rack/dark,/obj/machinery/door/window/brigdoor/northright,/obj/structure/window/reinforced{dir = 8},/obj/item/clothing/suit/space/void/security/prepared,/obj/item/clothing/suit/space/void/security/prepared,/turf/simulated/floor/tiled/dark,/area/sciencevessel/security/armory)
 "hr" = (/obj/machinery/network/requests_console{announcementConsole = 1; department = "Telecomms Admin"; name = "Telecomms RC"; pixel_x = 32},/obj/machinery/light_switch{pixel_y = -22},/turf/simulated/floor/lino,/area/sciencevessel/telecomms)
 "hD" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/turf/simulated/floor/tiled/dark,/area/sciencevessel/bridge/ofd)
@@ -96,7 +98,7 @@
 "hW" = (/obj/structure/cable{icon_state = "4-8"},/turf/simulated/wall,/area/sciencevessel/hallway/deckone/aft)
 "hY" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
 "hZ" = (/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/sciencevessel/hallway/deckone)
-"ih" = (/obj/machinery/light/small{dir = 4; pixel_y = 0},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
+"ih" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{dir = 8; id_tag = "dock_solars_pump"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
 "il" = (/obj/structure/table/standard,/obj/effect/floor_decal/spline/plain/black{dir = 1},/obj/item/documents/nanotrasen,/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/hop)
 "iq" = (/obj/effect/floor_decal/techfloor{dir = 8},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/hallway/deckone/aft)
 "is" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
@@ -128,7 +130,7 @@
 "kV" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/hallway/deckone/aft)
 "kZ" = (/obj/effect/floor_decal/spline/plain/black{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/turf/simulated/floor/wood/ebony,/area/sciencevessel/cap)
 "lb" = (/obj/machinery/alarm/monitor{dir = 4; pixel_x = -16},/turf/simulated/open,/area/sciencevessel/medical/stair/upper)
-"lf" = (/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
+"lf" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{dir = 4; id_tag = "dock_solars_pump"},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
 "lg" = (/obj/structure/bed/chair/comfy/blue,/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/bridge)
 "lh" = (/obj/effect/floor_decal/corner/red/half,/obj/machinery/firealarm{dir = 8; pixel_x = -16},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/hallway/deckone/aft)
 "lj" = (/obj/structure/bed/chair/comfy/blue,/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/bridge/ofd)
@@ -137,6 +139,7 @@
 "lp" = (/obj/machinery/portable_atmospherics/powered/pump/filled,/obj/machinery/light/small{dir = 4; pixel_y = 0},/turf/simulated/floor/plating,/area/sciencevessel/maint/forestar/deckone)
 "lq" = (/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/sciencevessel/forensics)
 "lr" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/wall,/area/sciencevessel/hop)
+"lt" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{dir = 4; id_tag = "dock_solars_pump"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
 "lx" = (/turf/simulated/wall,/area/sciencevessel/medical/stair/upper)
 "lD" = (/obj/machinery/button/blast_door{id_tag = "sensor_shroud"; name = "Sensor Shroud"; pixel_x = 26},/obj/effect/floor_decal/corner/blue{dir = 8},/turf/simulated/floor/tiled/dark,/area/sciencevessel/bridge)
 "lG" = (/obj/structure/table/rack/dark,/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/obj/item/clothing/head/helmet/riot,/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/security/armory)
@@ -176,7 +179,7 @@
 "oj" = (/obj/machinery/telecomms/broadcaster/preset_right,/turf/simulated/floor/bluegrid,/area/sciencevessel/telecomms/inner)
 "ol" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/effect/wallframe_spawn/reinforced/polarized/full,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/sciencevessel/forensics)
 "os" = (/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/effect/floor_decal/corner/red{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/dark,/area/sciencevessel/security/brig)
-"ou" = (/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/cable/yellow{icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/reinforced,/area/space)
+"ou" = (/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/cable/yellow{icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/reinforced,/area/sciencevessel/engineering/bridgesolar)
 "oy" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/cap)
 "oA" = (/obj/machinery/alarm/monitor{dir = 4; pixel_x = -16},/turf/simulated/floor/plating,/area/sciencevessel/maint/aftport/deckone)
 "oB" = (/obj/effect/floor_decal/corner/blue,/turf/simulated/floor/tiled/dark,/area/sciencevessel/bridge)
@@ -193,13 +196,13 @@
 "pD" = (/obj/effect/landmark{name = "blobstart"},/turf/simulated/floor/plating,/area/sciencevessel/maint/aftport/deckone)
 "pT" = (/obj/machinery/power/breakerbox/activated{RCon_tag = "Deck One Breaker"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "qf" = (/obj/machinery/network/mainframe,/turf/simulated/floor/bluegrid,/area/sciencevessel/telecomms/inner)
-"qj" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
+"qj" = (/obj/machinery/airlock_sensor{id_tag = "dock_solars_sensor"; pixel_x = -23},/obj/machinery/embedded_controller/radio/airlock/docking_port{id_tag = "csv_dock_solars"; pixel_x = -23; pixel_y = -4; req_access = list("ACCESS_EXTERNAL"); tag_airpump = "dock_solars_pump"; tag_chamber_sensor = "dock_solars_sensor"; tag_exterior_door = "dock_solars_out"; tag_interior_door = "dock_solars_in"},/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{dir = 4; id_tag = "dock_solars_pump"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
 "qn" = (/turf/simulated/wall,/area/sciencevessel/forensics)
 "qr" = (/turf/simulated/wall/r_wall,/area/sciencevessel/telecomms)
 "qs" = (/obj/effect/floor_decal/corner/blue/half{dir = 8},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone)
 "qz" = (/obj/structure/table/standard,/obj/item/storage/box/donkpockets,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
 "qD" = (/obj/structure/closet/secure_closet/hop{name = "lieutenant's locker"},/obj/item/gun/energy/gun/secure,/obj/item/clothing/suit/armor/pcarrier/nt_medium,/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/wood/mahogany,/area/sciencevessel/hop)
-"qG" = (/obj/machinery/atmospherics/unary/vent_pump,/turf/simulated/floor/plating,/area/sciencevessel/bridge/ofd)
+"qG" = (/obj/machinery/airlock_sensor{id_tag = "dock_ofd_sensor"; pixel_x = -23},/obj/machinery/embedded_controller/radio/airlock/docking_port{id_tag = "csv_dock_ofd"; pixel_x = -23; pixel_y = -4; req_access = list("ACCESS_EXTERNAL"); tag_airpump = "dock_ofd_pump"; tag_chamber_sensor = "dock_ofd_sensor"; tag_exterior_door = "dock_ofd_out"; tag_interior_door = "dock_ofd_in"},/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{id_tag = "dock_ofd_pump"},/turf/simulated/floor/plating,/area/sciencevessel/bridge/ofd)
 "qI" = (/obj/effect/floor_decal/techfloor{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/hallway/deckone/aft)
 "qL" = (/obj/random/closet,/obj/machinery/light/small{dir = 4; pixel_y = 0},/turf/simulated/floor/plating,/area/sciencevessel/maint/forestar/deckone)
 "qP" = (/obj/machinery/door/blast/regular/open{id_tag = "sensor_shroud"},/turf/simulated/floor/reinforced/airless,/area/sciencevessel/bridge)
@@ -217,6 +220,7 @@
 "rX" = (/obj/structure/reagent_dispensers/watertank,/obj/machinery/alarm/monitor{dir = 8; pixel_x = 16},/turf/simulated/floor/plating,/area/sciencevessel/maint/forestar/deckone)
 "sd" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
 "se" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/table/standard,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/monotile,/area/sciencevessel/bridge)
+"sm" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 6},/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
 "sn" = (/obj/machinery/door/airlock/medical,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled,/area/sciencevessel/medical/stair/upper)
 "sr" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/plating,/area/sciencevessel/maint/aftport/deckone)
 "sz" = (/obj/machinery/atmospherics/portables_connector{dir = 4; icon_state = "map_connector"},/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/plating,/area/sciencevessel/bridge/ofd)
@@ -255,7 +259,7 @@
 "vv" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/catwalk_plated,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/sciencevessel/hallway/deckone/aft)
 "vy" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
 "vD" = (/obj/item/beach_ball/holoball,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
-"vG" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
+"vG" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold4w/hidden,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
 "vI" = (/obj/machinery/alarm/monitor{dir = 8; pixel_x = 16},/obj/random/maintenance,/turf/simulated/floor/plating,/area/sciencevessel/maint/forestar/deckone)
 "vJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
 "vN" = (/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/sciencevessel/hallway/deckone)
@@ -315,17 +319,18 @@
 "zo" = (/obj/effect/wallframe_spawn/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/machinery/door/blast/shutters/open{id_tag = "brig_lockdown"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/sciencevessel/security/brig)
 "zp" = (/obj/machinery/computer/modular/preset/cardslot/command,/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/bridge)
 "zw" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
-"zy" = (/obj/machinery/disperser/back{dir = 1},/turf/simulated/floor/airless,/area/sciencevessel/bridge/ofd)
+"zy" = (/obj/machinery/disperser/back{dir = 1},/obj/structure/railing/mapped{dir = 8},/obj/structure/railing/mapped,/turf/simulated/floor/airless,/area/sciencevessel/bridge/ofd)
 "zz" = (/obj/effect/floor_decal/spline/plain/black{dir = 1},/obj/machinery/light{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/hop)
 "zB" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/bridge/ofd)
 "zH" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
 "zI" = (/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/cap)
+"zL" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/cable/yellow{icon_state = "2-4"},/obj/machinery/light{dir = 1},/turf/simulated/floor/reinforced,/area/sciencevessel/engineering/bridgesolar)
 "zO" = (/obj/machinery/firealarm{pixel_y = 16},/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/security/armory)
 "zP" = (/obj/machinery/computer/modular/preset/security,/turf/simulated/floor/tiled/monotile,/area/sciencevessel/bridge)
 "zS" = (/obj/machinery/telecomms/hub/preset/csv,/obj/machinery/light{dir = 8},/turf/simulated/floor/bluegrid,/area/sciencevessel/telecomms/inner)
 "zY" = (/obj/structure/table/rack/dark,/obj/machinery/door/window/brigdoor/northright,/obj/structure/window/reinforced{dir = 8},/obj/item/clothing/suit/space/void/security/alt/prepared,/obj/item/clothing/suit/space/void/security/alt/prepared,/turf/simulated/floor/tiled/dark,/area/sciencevessel/security/armory)
 "zZ" = (/turf/simulated/floor/airless,/area/sciencevessel/bridge/ofd)
-"Ab" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{icon_state = "4-8"},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
+"Ab" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "Ad" = (/obj/machinery/telecomms/server/presets/csv,/turf/simulated/floor/bluegrid,/area/sciencevessel/telecomms/inner)
 "Ae" = (/obj/machinery/door/airlock/command{name = "Telecommunications"},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/telecomms)
 "Ai" = (/obj/machinery/computer/modular/preset/civilian,/obj/machinery/firealarm{pixel_y = 16},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
@@ -380,6 +385,7 @@
 "Dc" = (/obj/structure/hygiene/shower{dir = 4; icon_state = "shower"},/obj/machinery/firealarm{pixel_y = 16},/turf/simulated/floor/tiled/freezer,/area/sciencevessel/brigbath)
 "Df" = (/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/sciencevessel/hallway/deckone)
 "Dh" = (/obj/structure/table/steel_reinforced,/obj/machinery/door/window/brigdoor/northright,/obj/machinery/door/window/brigdoor/southleft,/obj/machinery/door/blast/shutters{id_tag = "fdesk_shutters"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark,/area/sciencevessel/forensics)
+"Di" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/light{dir = 1},/turf/simulated/floor/reinforced,/area/sciencevessel/engineering/bridgesolar)
 "Dk" = (/obj/machinery/door/blast/regular/open{id_tag = "brig_lockdown"},/turf/simulated/floor/reinforced,/area/sciencevessel/security/brig)
 "Dp" = (/obj/machinery/door/airlock/hatch/maintenance,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/hallway/deckone)
 "Dq" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
@@ -451,6 +457,7 @@
 "Il" = (/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/telecomms/inner)
 "It" = (/obj/structure/table/standard,/obj/machinery/button/blast_door{id_tag = "hop_shutters"; pixel_x = 4; pixel_y = 7},/obj/item/chems/food/drinks/glass2/coffeecup/NT{pixel_x = -5; pixel_y = 1},/obj/item/folder,/obj/item/pen,/obj/effect/floor_decal/spline/plain/black{dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/sciencevessel/hop)
 "Iu" = (/obj/structure/cable{icon_state = "4-8"},/turf/simulated/wall/r_wall,/area/sciencevessel/telecomms/inner)
+"Iz" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{dir = 8; id_tag = "dock_solars_pump"},/obj/machinery/light/small{dir = 4; pixel_y = 0},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
 "IC" = (/obj/machinery/door/airlock/glass/civilian,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
 "IF" = (/obj/structure/railing/mapped{dir = 4},/obj/structure/lattice,/turf/simulated/open,/area/sciencevessel/maint/forestar/deckone)
 "II" = (/obj/structure/bed/chair/office/comfy/blue,/obj/effect/floor_decal/spline/plain/black,/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/turf/simulated/floor/wood/mahogany,/area/sciencevessel/hop)
@@ -458,7 +465,7 @@
 "IW" = (/obj/effect/floor_decal/corner/blue/half{dir = 4},/obj/machinery/firealarm{dir = 4; pixel_x = 16},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone)
 "IZ" = (/obj/effect/floor_decal/corner/blue/half{dir = 4},/obj/machinery/alarm/monitor{dir = 4; pixel_x = -16},/turf/simulated/floor/tiled/dark,/area/sciencevessel/bridge)
 "Jb" = (/obj/effect/floor_decal/corner/red{dir = 9},/obj/machinery/alarm/monitor{dir = 4; pixel_x = -16},/turf/simulated/floor/tiled/dark,/area/sciencevessel/security/brig)
-"Jg" = (/obj/machinery/door/airlock/external/bolted,/turf/simulated/floor/plating,/area/sciencevessel/bridge/ofd)
+"Jg" = (/obj/machinery/door/airlock/external/bolted{id_tag = "dock_ofd_out"},/obj/machinery/button/access/exterior{id_tag = "csv_dock_ofd"; pixel_x = 12; pixel_y = 23; req_access = list("ACCESS_EXTERNAL")},/turf/simulated/floor/plating,/area/sciencevessel/bridge/ofd)
 "Jl" = (/obj/machinery/power/solar_control,/obj/structure/cable/yellow{icon_state = "0-8"},/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
 "Jo" = (/obj/effect/floor_decal/corner/blue/half{dir = 8},/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone)
 "Jp" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
@@ -515,7 +522,7 @@
 "Mq" = (/turf/simulated/wall/r_wall,/area/sciencevessel/engineering/techstorage)
 "Mu" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
 "MA" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/hatch/yellow,/obj/structure/cable/yellow{icon_state = "2-4"},/turf/simulated/floor/reinforced,/area/space)
-"MG" = (/obj/machinery/door/airlock/external/bolted,/obj/machinery/atmospherics/pipe/simple/hidden,/turf/simulated/floor/plating,/area/sciencevessel/bridge/ofd)
+"MG" = (/obj/machinery/door/airlock/external/bolted{id_tag = "dock_ofd_in"},/obj/machinery/atmospherics/pipe/simple/hidden,/obj/machinery/button/access/interior{id_tag = "csv_dock_ofd"; pixel_x = -20; pixel_y = -14; req_access = list("ACCESS_EXTERNAL")},/turf/simulated/floor/plating,/area/sciencevessel/bridge/ofd)
 "MH" = (/obj/structure/hygiene/shower{dir = 4; icon_state = "shower"},/turf/simulated/floor/tiled/freezer,/area/sciencevessel/brigbath)
 "MK" = (/obj/effect/floor_decal/corner/red/half,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/dark,/area/sciencevessel/security/brig)
 "ML" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{icon_state = "2-8"},/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
@@ -549,7 +556,7 @@
 "OO" = (/obj/machinery/light/small{dir = 4},/obj/structure/filingcabinet/chestdrawer,/turf/simulated/floor/tiled/dark,/area/sciencevessel/hos_office)
 "Pa" = (/turf/simulated/wall,/area/sciencevessel/security/brig)
 "Pb" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/sciencevessel/telecomms/inner)
-"Pe" = (/obj/machinery/door/airlock/external/bolted,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/engineering/bridgesolar)
+"Pe" = (/obj/machinery/door/airlock/external/bolted{id_tag = "dock_solars_in"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/button/access/interior{id_tag = "csv_dock_solars"; pixel_x = 20; pixel_y = 15; req_access = list("ACCESS_EXTERNAL")},/obj/machinery/atmospherics/pipe/simple/hidden,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/engineering/bridgesolar)
 "Pk" = (/obj/effect/floor_decal/spline/plain/black{dir = 8},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/lino,/area/sciencevessel/telecomms/inner)
 "Pn" = (/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/obj/machinery/light_switch{pixel_x = 24},/turf/simulated/floor/tiled/dark,/area/sciencevessel/cap)
 "Po" = (/obj/machinery/door/airlock/vault{name = "Armory"},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/armory)
@@ -566,6 +573,7 @@
 "Qb" = (/obj/structure/closet/firecloset,/turf/simulated/floor/plating,/area/sciencevessel/maint/forestar/deckone)
 "Qc" = (/obj/machinery/portable_atmospherics/powered/pump/filled,/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
 "Qg" = (/obj/structure/table/steel,/obj/item/storage/box/ammo/beanbags,/obj/item/storage/box/ammo/beanbags,/obj/item/storage/box/ammo/beanbags,/obj/item/storage/box/ammo/beanbags,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/armory)
+"Qj" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/bridgesolar)
 "Qk" = (/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
 "Qm" = (/obj/effect/floor_decal/techfloor,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/security/armory)
 "Qv" = (/obj/effect/floor_decal/corner/blue/half{dir = 8},/obj/structure/sign/warning/server_room{pixel_x = -32},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
@@ -593,7 +601,6 @@
 "Sr" = (/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/bridge)
 "SA" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/turf/simulated/floor/tiled/monotile,/area/sciencevessel/bridge)
 "SB" = (/obj/structure/curtain/open/privacy,/turf/simulated/floor/tiled/freezer,/area/sciencevessel/brigbath)
-"SE" = (/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/airless,/area/sciencevessel/bridge/ofd)
 "SF" = (/obj/machinery/door/airlock/command{name = "Captain's Quarters"},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/cap)
 "SL" = (/obj/structure/bed/chair/comfy/blue,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/monotile,/area/sciencevessel/bridge)
 "SN" = (/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone)
@@ -618,7 +625,7 @@
 "Uf" = (/obj/machinery/computer/modular/preset/security,/obj/machinery/recharger/wallcharger{pixel_y = 26},/turf/simulated/floor/tiled/dark,/area/sciencevessel/hos_office)
 "Ug" = (/obj/machinery/network/relay,/obj/machinery/light{dir = 4},/turf/simulated/floor/bluegrid,/area/sciencevessel/telecomms/inner)
 "Uh" = (/obj/structure/table/standard,/obj/item/stock_parts/circuitboard/apc,/obj/item/stock_parts/circuitboard/apc,/obj/item/stock_parts/circuitboard/apc,/obj/item/stock_parts/circuitboard/disperser,/obj/item/stock_parts/circuitboard/disperserback,/obj/item/stock_parts/circuitboard/aiupload,/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
-"Ul" = (/obj/machinery/alarm/monitor{dir = 8; pixel_x = 16},/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
+"Ul" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/air/airlock,/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
 "Ur" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/catwalk_plated,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/sciencevessel/hallway/deckone)
 "Ut" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "Uu" = (/obj/machinery/power/smes/buildable/outpost_substation{RCon_tag = "Solars - Deck One"},/obj/structure/cable{icon_state = "0-2"},/obj/machinery/light{dir = 8},/turf/simulated/floor/plating,/area/sciencevessel/engineering/bridgesolar)
@@ -658,7 +665,7 @@
 "Xp" = (/obj/effect/wallframe_spawn/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/sciencevessel/security/brig)
 "Xq" = (/obj/machinery/light/small{dir = 4; pixel_y = 0},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/brig)
 "Xu" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/catwalk_plated,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating,/area/sciencevessel/hallway/deckone/aft)
-"Xx" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light/small{dir = 8},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
+"Xx" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "XF" = (/obj/machinery/door/airlock/hatch/maintenance,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/maint/foreport/deckone)
 "XI" = (/obj/structure/table/standard,/obj/item/stock_parts/circuitboard/autolathe,/obj/item/stock_parts/circuitboard/autolathe,/obj/item/stock_parts/circuitboard/batteryrack,/obj/item/stock_parts/circuitboard/cell_charger,/obj/item/stock_parts/circuitboard/design_console,/obj/item/stock_parts/circuitboard/aicore,/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "XQ" = (/turf/simulated/wall,/area/sciencevessel/bridge/ofd)
@@ -666,7 +673,7 @@
 "Yh" = (/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/lino,/area/sciencevessel/telecomms)
 "Yj" = (/obj/effect/floor_decal/techfloor{dir = 8},/obj/machinery/power/apc{dir = 4; pixel_x = 24},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/hallway/deckone/aft)
 "Yk" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/catwalk_plated,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating,/area/sciencevessel/hallway/deckone)
-"Yn" = (/obj/structure/table/standard,/obj/item/flash,/obj/item/flash,/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
+"Yn" = (/obj/structure/table/standard,/obj/item/flash,/obj/item/flash,/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/sciencevessel/engineering/techstorage)
 "Yy" = (/obj/machinery/door/airlock/vault{name = "Security Vault"},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/security/armory)
 "Yz" = (/obj/effect/floor_decal/spline/plain/black,/obj/machinery/light,/turf/simulated/floor/wood/ebony,/area/sciencevessel/cap)
 "YA" = (/obj/structure/hygiene/shower{dir = 4; icon_state = "shower"},/obj/item/soap{desc = "Warning: Do not drop!"; name = "soap of justice"},/turf/simulated/floor/tiled/freezer,/area/sciencevessel/brigbath)
@@ -712,7 +719,7 @@ mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbbbUCbbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbbbzZxNzZbbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbbbGKWPNsbbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
-mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbbbbbSEzyBwjybbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
+mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbbbbbzZzyBwjybbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbqGJgzZtFzZGvbbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbbbMGbbbCbCbCiSbbbbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrbbszOegnffuPQCAxbbbbbbmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
@@ -782,13 +789,13 @@ mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmruEnaJHiAgZAbbUIMeiOHOHOHOHoiZdrdrdrdrdrdrdglKemrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmruEuESosrOzXxTUeItCOHUucnJloiAuKiTKrdrdrdrdKeKemrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmruEAqAqFZEewhMYFrVnMLiWheoiuIYClGHgFTHRCUKemrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
-mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmruEuEuEnaFZYnUtGAFQOHbfiWUloiEJQmQmQmQmFDKeKeuEmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
+mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmruEuEuEnaFZYnUtGAFQOHbfsmUloiEJQmQmQmQmFDKeKeuEmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhuEuEFZUhXIxYWSoioiPeoioilVjBHBhlzYKeKeWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
-mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhuEMqMqMqMqMqoilfvGlfoiKeKeKeKeKeKeWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
+mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhuEMqMqMqMqMqoilfvGIzoiKeKeKeKeKeKeWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhWhWhuEuEuEuEoiqjvGihoiuEuEuEuEWhWhWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
-mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhWhWhWhWhWhWhoilfvGlfoiWhWhWhWhWhWhWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
-mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhWhWhWhWhWhWhoioiPeoioiWhWhWhWhWhWhWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
-mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhCzwBwBwBMAwBMAwBouwBwBwBYOwBwBcbZfWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
+mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhWhWhWhWhWhWhoiltQjihoiWhWhWhWhWhWhWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
+mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhWhWhWhWhWhWhoioieKoioiWhWhWhWhWhWhWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
+mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhWhCzwBwBwBMAwBzLeGoueGDiwBYOwBwBcbZfWhWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhTDykgBWhTDykgBWhTDykgBWhTDykgBWhTDykgBWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhTDykgBWhTDykgBWhTDykgBWhTDykgBWhTDykgBWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
 mrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrWhWhWhTDykgBWhTDykgBWhTDykgBWhTDykgBWhTDykgBWhWhWhmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmrmr
