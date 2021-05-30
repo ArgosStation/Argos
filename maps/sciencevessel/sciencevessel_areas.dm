@@ -43,7 +43,6 @@
 /area/sciencevessel/engineering
 	name = "Engineering"
 	req_access = list(access_engine)
-	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambigen7.ogg','sound/ambience/ambigen8.ogg','sound/ambience/ambigen9.ogg','sound/ambience/ambigen10.ogg','sound/ambience/ambigen11.ogg','sound/ambience/ambieng1.ogg')
 	secure = TRUE
 	icon_state = "yellow"
 
@@ -147,6 +146,17 @@
 /area/sciencevessel/landingpad
 	name = "\improper Fourth Deck - Shuttle Landing Pad"
 	icon_state = "light_blue"
+	base_turf = /turf/simulated/floor
+
+/area/shuttle/spatha
+	name = "\improper Spatha"
+	icon_state = "light_blue"
+	req_access = list(access_research)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+
+/area/shuttle/spatha/cockpit
+	name = "\improper Spatha - Cockpit"
+	icon_state = "yellow"
 
 //level 1
 
@@ -206,7 +216,7 @@
 /area/sciencevessel/dock
 	name = "\improper Third Deck - Port Side Docking Port"
 	icon_state = "yellow"
-u
+
 /area/sciencevessel/dock/star
 	name = "\improper Third Deck - Starboard Side Docking Port"
 
@@ -231,6 +241,10 @@ u
 
 /area/sciencevessel/science/hallway
 	name = "\improper Third Deck - Research Hallway"
+	icon_state = "light_blue"
+
+/area/sciencevessel/science/eva
+	name = "\improper Third Deck - Research EVA Storage"
 	icon_state = "light_blue"
 
 /area/sciencevessel/science/xenodoor
@@ -359,6 +373,7 @@ u
 /area/sciencevessel/kitchen/garden
 	name = "\improper Second Deck - Grow Chamber"
 	icon_state = "green"
+	req_access = list()
 
 /area/sciencevessel/janitor/mid
 	name = "\improper Second Deck - Midship Custodial Closet"

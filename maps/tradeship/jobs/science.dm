@@ -3,7 +3,7 @@
 	supervisors = "the Head Researcher and the Captain"
 	total_positions = 2
 	spawn_positions = 1
-	alt_titles = list()	
+	alt_titles = list()
 	outfit_type = /decl/hierarchy/outfit/job/tradeship/hand/researcher/junior
 	min_skill = list(
 		SKILL_LITERACY = SKILL_ADEPT,
@@ -22,11 +22,11 @@
 	economic_power = 7
 	minimal_player_age = 7
 	access = list(
-		access_robotics, 
-		access_tox, 
-		access_tox_storage, 
-		access_research, 
-		access_xenobiology, 
+		access_robotics,
+		access_tox,
+		access_tox_storage,
+		access_research,
+		access_xenobiology,
 		access_xenoarch
 	)
 	minimal_access = list(
@@ -75,45 +75,47 @@
 		access_bridge,
 		access_tox,
 		access_morgue,
-		access_tox_storage, 
-		access_teleporter, 
-		access_sec_doors, 
-		access_heads,
-		access_research,
-		access_robotics, 
-		access_xenobiology, 
-		access_ai_upload, 
-		access_tech_storage,
-		access_RC_announce, 
-		access_keycard_auth, 
-		access_tcomsat, 
-		access_gateway, 
-		access_xenoarch, 
-		access_network
-	)
-	minimal_access = list(
-		access_rd, 
-		access_bridge, 
-		access_tox, 
-		access_morgue,
 		access_tox_storage,
-		access_teleporter, 
+		access_teleporter,
 		access_sec_doors,
 		access_heads,
-		access_research, 
+		access_research,
 		access_robotics,
 		access_xenobiology,
-		access_ai_upload, 
+		access_ai_upload,
 		access_tech_storage,
-		access_RC_announce, 
+		access_RC_announce,
 		access_keycard_auth,
-		access_tcomsat, 
-		access_gateway, 
-		access_xenoarch, 
-		access_network
+		access_tcomsat,
+		access_gateway,
+		access_xenoarch,
+		access_network,
+		access_external_airlocks
+	)
+	minimal_access = list(
+		access_rd,
+		access_bridge,
+		access_tox,
+		access_morgue,
+		access_tox_storage,
+		access_teleporter,
+		access_sec_doors,
+		access_heads,
+		access_research,
+		access_robotics,
+		access_xenobiology,
+		access_ai_upload,
+		access_tech_storage,
+		access_RC_announce,
+		access_keycard_auth,
+		access_tcomsat,
+		access_gateway,
+		access_xenoarch,
+		access_network,
+		access_external_airlocks
 	)
 	minimal_player_age = 14
 	ideal_character_age = 50
-	guestbanned = 1	
+	guestbanned = 1
 	must_fill = 1
 	not_random_selectable = 1

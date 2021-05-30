@@ -8,5 +8,5 @@
 	burn_delay = 2 SECONDS
 	restricted_area = 30
 
-	initial_generic_waypoints = list() //to be set when shuttles are mapped
+	initial_generic_waypoints = list("nav_csv_hangar")
 	initial_restricted_waypoints = list()
