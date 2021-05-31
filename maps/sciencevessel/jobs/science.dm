@@ -26,7 +26,8 @@
 		access_research,
 		access_xenobiology,
 		access_xenoarch,
-		access_medsci
+		access_medsci,
+		access_external_airlocks,
 	)
 	minimal_access = list(
 		access_eva,
@@ -36,7 +37,8 @@
 		access_research,
 		access_xenobiology,
 		access_xenoarch,
-		access_medsci
+		access_medsci,
+		access_external_airlocks
 	)
 	selection_color = "#633d63"
 	economic_power = 10
