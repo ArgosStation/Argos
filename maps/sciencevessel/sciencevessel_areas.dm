@@ -234,6 +234,7 @@
 /area/sciencevessel/science/robotics
 	name = "\improper Third Deck - Robotics"
 	icon_state = "yellow"
+	req_access = list(access_research, access_robotics)
 
 /area/sciencevessel/science/fab
 	name = "\improper Third Deck - Fabrication Lab"
@@ -246,14 +247,17 @@
 /area/sciencevessel/science/eva
 	name = "\improper Third Deck - Research EVA Storage"
 	icon_state = "light_blue"
+	req_access = list(access_research, access_eva)
 
 /area/sciencevessel/science/xenodoor
 	name = "\improper Third Deck - Xenobiology Access"
 	icon_state = "red"
+	req_access = list(access_research, access_xenobiology)
 
 /area/sciencevessel/science/xeno
 	name = "\improper Third Deck - Xenobiology Lab"
 	icon_state = "light_blue"
+	req_access = list(access_research, access_xenobiology)
 
 /area/sciencevessel/science/plants
 	name = "\improper Third Deck - Xenoflora Lab"
@@ -305,6 +309,7 @@
 /area/sciencevessel/medical/stair
 	name = "\improper Second Deck - MedSci Stairwell"
 	icon_state = "purple"
+	req_access = list(access_medsci)
 
 /area/sciencevessel/medical/lobby
 	name = "\improper Second Deck - Medbay Lobby"
@@ -313,9 +318,11 @@
 /area/sciencevessel/medical/or1
 	name = "\improper Second Deck - Operating Room"
 	icon_state = "yellow"
+	req_access = list(access_medical, access_surgery)
 
 /area/sciencevessel/medical/or2 //changed the room's purpose, left the path for convenience
 	name = "\improper Second Deck - Morgue"
+	req_access = list(access_medical, access_morgue)
 
 /area/sciencevessel/security/checkpoint/decktwo
 	name = "\improper Second Deck - Security Checkpoint"

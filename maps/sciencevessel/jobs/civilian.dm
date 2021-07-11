@@ -93,17 +93,13 @@
 		access_janitor,
 		access_maint_tunnels,
 		access_engine,
-		access_research,
-		access_sec_doors,
-		access_medical
+		access_sec_doors
 	)
 	minimal_access = list(
 		access_janitor,
 		access_maint_tunnels,
 		access_engine,
-		access_research,
-		access_sec_doors,
-		access_medical
+		access_sec_doors
 	)
 	alt_titles = list(
 		"Custodian",
