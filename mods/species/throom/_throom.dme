@@ -1,0 +1,14 @@
+#ifndef MODPACK_THROOM
+#define MODPACK_THROOM
+#include "_throom.dm"
+#include "datum\cultures.dm"
+#include "datum\clothing.dm"
+#include "datum\emotes.dm"
+//#include "datum\spores.dm" needs work
+#include "datum\regen.dm"
+#include "datum\language.dm"
+#include "datum\species.dm"
+#include "datum\species_bodytypes.dm"
+#include "organs\organs_external.dm"
+#include "organs\organs_internal.dm"
+#endif

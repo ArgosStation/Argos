@@ -12,6 +12,7 @@
 	#include "../../mods/species/neoavians/_neoavians.dme"
 	#include "../../mods/species/lizard/_lizard.dme"
 	#include "../../mods/species/skrell/_skrell.dme"
+	#include "../../mods/species/throom/_throom.dme"
 	#include "../../mods/species/vox/_vox.dme"
 	#include "../../mods/species/adherent/_adherent.dme"
 

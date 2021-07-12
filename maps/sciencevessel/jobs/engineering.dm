@@ -18,7 +18,8 @@
 		access_external_airlocks,
 		access_construction,
 		access_atmospherics,
-		access_emergency_storage
+		access_emergency_storage,
+		access_medsci
 	)
 	minimal_access = list(
 		access_eva,
@@ -29,7 +30,8 @@
 		access_external_airlocks,
 		access_construction,
 		access_atmospherics,
-		access_emergency_storage
+		access_emergency_storage,
+		access_medsci
 	)
 	min_skill = list(
 		SKILL_LITERACY     = SKILL_ADEPT,

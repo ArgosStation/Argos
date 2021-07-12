@@ -85,7 +85,8 @@
 		access_hop,
 		access_RC_announce,
 		access_keycard_auth,
-		access_gateway
+		access_gateway,
+		access_medsci
 	)
 	minimal_access = list(
 		access_security,
@@ -122,7 +123,8 @@
 		access_hop,
 		access_RC_announce,
 		access_keycard_auth,
-		access_gateway
+		access_gateway,
+		access_medsci
 	)
 	min_skill = list(
 		SKILL_LITERACY = SKILL_ADEPT,

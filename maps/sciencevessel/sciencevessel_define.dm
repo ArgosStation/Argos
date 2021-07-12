@@ -8,10 +8,12 @@
 	contact_levels = list(1, 2, 3, 4)
 	player_levels = list(1, 2, 3, 4)
 
-	lobby_tracks = list(/decl/music_track/banned_from_argo)
+	lobby_tracks = list(/decl/music_track/banned_from_argo,
+						/decl/music_track/banned_from_cargo,
+	)
 
-	station_name  = "Civilian Science Vessel Argo"
-	station_short = "CSV Argo"
+	station_name  = "CSV Argo"
+	station_short = "Argo"
 	dock_name     = "Central Command"
 	boss_name     = "Nanotrasen"
 	boss_short    = "Corporate Office"
@@ -19,7 +21,7 @@
 	company_short = "NT"
 	overmap_size = 30
 	overmap_event_areas = 20
-	lobby_screens = list('maps/sciencevessel/lobby.png')
+	lobby_screens = list('maps/sciencevessel/lobby/lobby.png')
 	use_overmap = 1
 	num_exoplanets = 1
 	away_site_budget = 3
@@ -64,9 +66,17 @@
 /decl/music_track/banned_from_argo
 	artist = "Leslie Fish"
 	title = "Banned From Argo"
-	song = 'maps/sciencevessel/Banned_From_Argo.mp3'
+	song = 'maps/sciencevessel/lobby/Banned_From_Argo.mp3'
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://www.youtube.com/watch?v=FH8lvwXx_Y8"
+
+/decl/music_track/banned_from_cargo
+	artist = "Goat & Stagger"
+	title = "Banned From Cargo"
+	song = 'maps/sciencevessel/lobby/Banned_From_Cargo.mp3'
+	license = /decl/license/cc_by_nc_sa_3_0
+	url = "https://soundcloud.com/user-168042611-872573264/banned-from-cargo-feat-stagger"
+
 
 /datum/gear/utility/guns
 	display_name = "guns"
