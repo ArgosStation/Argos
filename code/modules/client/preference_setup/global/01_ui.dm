@@ -70,7 +70,8 @@ var/global/list/valid_icon_sizes = list(32, 48, 64, 96, 128)
 	. += jointext(get_ui_table(), null)
 	. += "</table><br>"
 	. += "<b>Tooltip Style:</b> <a href='?src=\ref[src];select_tooltip_style=1'><b>[pref.tooltip_style]</b></a><br>"
-	. += "<b>Default icon size:</b> <a href='?src=\ref[src];select_icon_size=1'>[pref.icon_size]x[pref.icon_size]</a><br>"
+	//. += "<b>Default icon size:</b> <a href='?src=\ref[src];select_icon_size=1'>[pref.icon_size]x[pref.icon_size]</a><br>"
+	// Commented out to disallow icon size changing
 
 	if(can_select_ooc_color(user))
 		. += "<b>OOC Color:</b> "
@@ -140,7 +141,7 @@ var/global/list/valid_icon_sizes = list(32, 48, 64, 96, 128)
 			if("ooc")
 				pref.ooccolor = initial(pref.ooccolor)
 		return TOPIC_REFRESH
-
+/*
 	else if(href_list["select_icon_size"])
 		var/new_icon_size = input(user, "Enter a new default icon size.", "Default Icon Size", pref.icon_size) as null|anything in global.valid_icon_sizes
 		if(new_icon_size && pref.icon_size != new_icon_size)
@@ -149,6 +150,6 @@ var/global/list/valid_icon_sizes = list(32, 48, 64, 96, 128)
 			return TOPIC_REFRESH
 
 	return ..()
-
+*/
 /proc/can_select_ooc_color(var/mob/user)
 	return config.allow_admin_ooccolor && check_rights(R_ADMIN, 0, user)
