@@ -179,7 +179,7 @@
 "ja" = (/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{dir = 8},/obj/machinery/meter,/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/sciencevessel/engineering/thruster/star)
 "jg" = (/obj/item/radio/beacon/anchored,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
 "jh" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/firedoor,/obj/machinery/door/blast/regular/open{id_tag = "cell4-in"},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 5},/turf/simulated/floor/plating,/area/sciencevessel/science/xeno)
-"jl" = (/obj/structure/table/reinforced,/turf/simulated/floor/tiled/white,/area/sciencevessel/science/fab)
+"jl" = (/obj/structure/table/reinforced,/obj/item/stack/material/sheet/mapped/steel/fifty,/obj/item/stack/material/pane/mapped/glass/fifty,/obj/item/stack/material/reinforced/mapped/fiberglass/fifty,/obj/item/stack/material/shiny/mapped/aluminium/fifty,/obj/item/stack/material/panel/mapped/plastic/fifty,/turf/simulated/floor/tiled/white,/area/sciencevessel/science/fab)
 "jn" = (/obj/effect/floor_decal/techfloor{dir = 8},/obj/structure/table/rack,/obj/item/stack/material/rods/fifty,/obj/item/stack/material/rods/fifty,/obj/item/stack/material/rods/fifty,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/engineering/office)
 "jp" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled,/area/sciencevessel/eva/deckone)
 "jy" = (/obj/effect/floor_decal/corner/blue{dir = 9},/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone)
@@ -417,7 +417,7 @@
 "xb" = (/obj/structure/catwalk,/obj/machinery/alarm{pixel_y = 16},/turf/simulated/floor/plating,/area/sciencevessel/maint/aftstar/deckone)
 "xf" = (/obj/machinery/alarm{dir = 1; pixel_y = -16},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/white,/area/sciencevessel/science/hallway)
 "xj" = (/turf/simulated/floor/plating,/area/sciencevessel/maint/aftport/deckone)
-"xk" = (/obj/structure/table/rack,/obj/effect/floor_decal/techfloor{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/science/robotics)
+"xk" = (/obj/structure/table/rack,/obj/effect/floor_decal/techfloor{dir = 8},/obj/item/stack/material/sheet/mapped/steel/fifty,/obj/item/stack/material/sheet/mapped/steel/fifty,/obj/item/stack/material/sheet/mapped/steel/fifty,/obj/item/stack/material/sheet/mapped/steel/fifty,/obj/item/stack/material/pane/mapped/glass/fifty,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/science/robotics)
 "xn" = (/obj/machinery/atmospherics/pipe/simple/hidden/universal,/obj/machinery/meter,/turf/simulated/floor/plating,/area/sciencevessel/maint/aftstar/deckone)
 "xr" = (/obj/structure/ladder,/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
 "xs" = (/obj/effect/floor_decal/corner/orange{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/office)
@@ -463,7 +463,6 @@
 "zV" = (/obj/machinery/power/shield_generator,/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/obj/structure/cable/cyan{icon_state = "0-2"},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating,/area/sciencevessel/engineering/sub/deckone)
 "zW" = (/obj/machinery/cryopod/robot,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/engineering/drone)
 "zX" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/reagentgrinder,/obj/effect/floor_decal/corner/purple/half{dir = 1},/turf/simulated/floor/tiled/white/monotile,/area/sciencevessel/science/office)
-"zY" = (/obj/structure/bed/chair/office/comfy/purple,/obj/effect/landmark/start{name = "Scientist"},/turf/simulated/floor/tiled/white/monotile,/area/sciencevessel/science/office)
 "Ae" = (/obj/structure/ladder,/obj/machinery/alarm{pixel_y = 16},/turf/simulated/floor/plating,/area/sciencevessel/engineering/thruster/star)
 "Ah" = (/turf/simulated/floor/reinforced,/area/sciencevessel/science/xeno)
 "Ak" = (/obj/effect/decal/cleanable/blood/oil,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/sciencevessel/maint/foreport/deckone)
@@ -510,7 +509,7 @@
 "Dn" = (/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
 "Dr" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
 "Ds" = (/obj/machinery/firealarm{pixel_y = 16},/turf/simulated/floor/plating,/area/sciencevessel/engineering/fuel)
-"Dt" = (/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/obj/machinery/power/apc{dir = 4; pixel_x = 24},/obj/structure/bed/chair/office/comfy/purple,/obj/effect/landmark/start{name = "Scientist"},/obj/effect/floor_decal/techfloor{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/science/robotics)
+"Dt" = (/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/obj/machinery/power/apc{dir = 4; pixel_x = 24},/obj/structure/bed/chair/office/comfy/purple,/obj/effect/floor_decal/techfloor{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/science/robotics)
 "Dz" = (/turf/simulated/wall/r_wall,/area/sciencevessel/engineering/thruster/star)
 "DB" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/white,/area/sciencevessel/science/xeno)
 "DC" = (/obj/machinery/computer/upload/robot{dir = 4},/turf/simulated/floor/bluegrid,/area/sciencevessel/engineering/drone)
@@ -821,7 +820,7 @@
 "Ve" = (/obj/structure/table/standard,/obj/item/scalpel,/obj/item/circular_saw,/obj/item/scanner/xenobio,/obj/machinery/firealarm{pixel_y = 16},/turf/simulated/floor/tiled/white,/area/sciencevessel/science/xeno)
 "Vm" = (/turf/simulated/wall,/area/sciencevessel/eva/deckone)
 "Vu" = (/obj/machinery/door/airlock/engineering,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/sciencevessel/engineering/eva)
-"Vw" = (/obj/structure/table/reinforced,/obj/item/storage/toolbox/mechanical,/obj/item/multitool,/obj/item/stock_parts/capacitor,/obj/item/stock_parts/capacitor,/turf/simulated/floor/tiled/white,/area/sciencevessel/science/fab)
+"Vw" = (/obj/structure/table/reinforced,/obj/item/storage/toolbox/mechanical,/obj/item/multitool,/obj/item/stock_parts/capacitor,/obj/item/stock_parts/capacitor,/obj/item/stack/cable_coil/random,/turf/simulated/floor/tiled/white,/area/sciencevessel/science/fab)
 "Vx" = (/obj/machinery/portable_atmospherics/hydroponics/soil,/obj/machinery/light{dir = 4},/turf/simulated/floor/grass,/area/sciencevessel/science/plants)
 "VB" = (/obj/machinery/atmospherics/valve/shutoff,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/sciencevessel/engineering/thruster)
 "VD" = (/obj/effect/floor_decal/corner/orange{dir = 5},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/engineering/office)
@@ -853,7 +852,7 @@
 "Xf" = (/obj/effect/floor_decal/techfloor,/turf/simulated/floor/tiled/techfloor,/area/sciencevessel/science/robotics)
 "Xh" = (/obj/structure/sign/warning/compressed_gas{pixel_y = -32},/obj/machinery/light/small,/turf/simulated/floor/plating,/area/sciencevessel/engineering/fuel)
 "Xk" = (/obj/effect/floor_decal/corner/purple{dir = 6},/obj/machinery/alarm{dir = 8; pixel_x = 16},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/fore)
-"Xt" = (/obj/structure/bed/chair/office/comfy/purple,/obj/effect/landmark/start{name = "Scientist"},/turf/simulated/floor/tiled/white,/area/sciencevessel/science/fab)
+"Xt" = (/obj/structure/bed/chair/office/comfy/purple,/turf/simulated/floor/tiled/white,/area/sciencevessel/science/fab)
 "Xw" = (/obj/effect/floor_decal/corner/blue{dir = 9},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone)
 "Xx" = (/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/obj/effect/floor_decal/corner/orange{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/tiled,/area/sciencevessel/hallway/deckone/aft)
 "XD" = (/obj/effect/floor_decal/corner/red{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/dark,/area/sciencevessel/security/stair/deckone)
@@ -962,7 +961,7 @@ ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
 ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNRNnjnXTmTFUdUdkrAZkrUdUdfjgRgRgRSrSrRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
 ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNZDhQZDRloJlkzXEFWnVVsDsDpAHxKSSxpkSrRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
 ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNCrwEZDTmXdaSYwUvqtUPnmUMoqgRRkmrGESrRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
-ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNFtAkZDTmqOTdCPGsWQYzYUzYRbgRBlmrkqSrRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
+ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNFtAkZDTmqOTdCPGsWQYzYUaSRbgRBlmrkqSrRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
 ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNZDhQZDjKjKjKjKSdlUCcTmSUTmgRwfmrYNSrRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
 ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNRNnjukukBUSYukZmSOLXRsdPeNgRgRsBSrSrRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET
 ETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETRNRNhQukukGKNtukNqbJVIbGlbAMEHbZFYLTRNETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETETET

@@ -492,3 +492,11 @@
 /area/sciencevessel/medical/stair/upper
 	name = "\improper First Deck - MedSci Stairwell"
 	req_access = list(access_medsci)
+
+//very top deck with AI core and cargo
+
+/area/sciencevessel/engineering/ai
+	name = "AI Core"
+	req_access = list(access_ce)
+	secure = TRUE
+	icon_state = "light_blue"

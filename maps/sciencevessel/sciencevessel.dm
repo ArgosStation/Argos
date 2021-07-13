@@ -35,6 +35,7 @@
 	#include "sciencevessel-1.dmm"
 	#include "sciencevessel-2.dmm"
 	#include "sciencevessel-3.dmm"
+	#include "sciencevessel-4.dmm"
 
 	#include "sciencevessel_antagonists.dm"
 	#include "sciencevessel_areas.dm"
