@@ -49,17 +49,22 @@
 			var/image/aura_image = get_aura_image()
 			if(rating >= PSI_RANK_PARAMOUNT) // spooky boosters
 				aura_color = "#aaffaa"
+				eye_glow_colour = "#aaffaa"
 				aura_image.blend_mode = BLEND_SUBTRACT
 			else
 				aura_image.blend_mode = BLEND_ADD
 				if(highest_faculty == PSI_COERCION)
 					aura_color = "#cc3333"
+					eye_glow_colour = "#cc3333"
 				else if(highest_faculty == PSI_PSYCHOKINESIS)
 					aura_color = "#3333cc"
+					eye_glow_colour = "#3333cc"
 				else if(highest_faculty == PSI_REDACTION)
 					aura_color = "#33cc33"
+					eye_glow_colour = "#33cc33"
 				else if(highest_faculty == PSI_ENERGISTICS)
 					aura_color = "#cccc33"
+					eye_glow_colour = "#cccc33"
 			aura_image.pixel_x = -64 - owner.default_pixel_x
 			aura_image.pixel_y = -64 - owner.default_pixel_y
 

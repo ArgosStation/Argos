@@ -5,14 +5,14 @@ PROCESSING_SUBSYSTEM_DEF(psi)
 	priority = SS_PRIORITY_PSYCHICS
 	flags = SS_POST_FIRE_TIMING | SS_BACKGROUND
 
-	var/list/faculties_by_id =        list()
-	var/list/faculties_by_name =      list()
-	var/list/all_aura_images =        list()
-	var/list/all_psi_complexes =      list()
-	var/list/psi_dampeners =          list()
-	var/list/psi_monitors =           list()
-	var/list/armour_faculty_by_type = list()
-	var/list/faculties_by_intent  = list()
+	var/list/faculties_by_id =			list()
+	var/list/faculties_by_name =		list()
+	var/list/all_aura_images =			list()
+	var/list/all_psi_complexes =		list()
+	var/list/psi_dampeners =			list()
+	var/list/psi_monitors =				list()
+	var/list/armour_faculty_by_type =	list()
+	var/list/faculties_by_intent =		list()
 
 /datum/controller/subsystem/processing/psi/proc/get_faculty(var/faculty)
 	return faculties_by_name[faculty] || faculties_by_id[faculty]
