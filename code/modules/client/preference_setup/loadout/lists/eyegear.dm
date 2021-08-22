@@ -84,17 +84,17 @@
 /datum/gear/eyes/shades/
 	display_name = "sunglasses"
 	path = /obj/item/clothing/glasses/sunglasses
-	cost = 3
+	cost = 2
 
 /datum/gear/eyes/shades/sunglasses
 	display_name = "sunglasses, fat"
 	path = /obj/item/clothing/glasses/sunglasses/big
-	cost = 3
+	cost = 2
 
 /datum/gear/eyes/shades/prescriptionsun
 	display_name = "sunglasses, presciption"
 	path = /obj/item/clothing/glasses/sunglasses/prescription
-	cost = 3
+	cost = 2
 
 /datum/gear/eyes/hudpatch
 	display_name = "iPatch"
