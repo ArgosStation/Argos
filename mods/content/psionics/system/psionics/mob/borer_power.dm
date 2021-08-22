@@ -30,7 +30,7 @@
 
 /mob/living/simple_animal/borer/RangedAttack(atom/A, var/params)
 	. = ..()
-	if(!. && a_intent == I_DISARM && isliving(A) && !neutered && can_do_special_ranged_attack(FALSE))
+	if(!. && a_intent == I_DISARM && isliving(A) && /*!neutered &&*/ can_do_special_ranged_attack(FALSE))
 		var/mob/living/M = A
 		if(locate(/mob/living/simple_animal/borer) in M.contents)
 			to_chat(src, SPAN_WARNING("You cannot dominate a host who already has a passenger!"))
@@ -54,6 +54,6 @@
 			to_chat(src, SPAN_DANGER("You focus on [M] and freeze their limbs with a wave of terrible psionic dread."))
 			to_chat(M, SPAN_DANGER("You feel a creeping, horrible sense of dread come over you, freezing your limbs and setting your heart racing."))
 			SET_STATUS_MAX(M, STAT_WEAK, 10)
-			set_ability_cooldown(15 SECONDS)
+			setClickCooldown(15 SECONDS)
 
 		return TRUE

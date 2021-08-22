@@ -139,9 +139,10 @@
 			user.phase_in(get_turf(user))
 
 			for(var/obj/item/grab/G in user.contents)
-				if(G.affecting)
-					G.affecting.phase_out(get_turf(G.affecting))
-					G.affecting.forceMove(locate(T.x + rand(-1, 1), T.y + rand(-1, 1), T.z))
-					G.affecting.phase_in(get_turf(G.affecting))
+				if(G.affecting && isliving(G.affecting))
+					var/mob/living/L = G.affecting
+					L.phase_out(get_turf(G.affecting))
+					L.forceMove(locate(T.x + rand(-1, 1), T.y + rand(-1, 1), T.z))
+					L.phase_in(get_turf(G.affecting))
 
 	return TRUE

@@ -22,7 +22,7 @@
 	if(isnull(target) || istype(target)) return FALSE
 	. = ..()
 	if(.)
-		if(istype(target,/obj/item/clothing/mask/smokable/cigarette))
+		if(istype(target, /obj/item/clothing/mask/smokable/cigarette))
 			var/decl/pronouns/G = user.get_pronouns()
 			var/obj/item/clothing/mask/smokable/cigarette/S = target
 			S.light("\The [user] snaps [G.his] fingers and \the [S] lights up.")
@@ -69,14 +69,13 @@
 							flash_strength = (flash_strength / 2)
 					if(flash_strength > 0)
 						target.flash_eyes(FLASH_PROTECTION_MODERATE - safety)
-						target.Stun(flash_strength / 2)
-						target.eye_blurry += flash_strength
-						target.confused += (flash_strength + 2)
+						target.stun_effect_act(flash_strength / 2)
+						target.set_status(STAT_BLURRY, flash_strength)
+						target.set_status(STAT_CONFUSE, (flash_strength + 2))
 						if(flash_strength > 3)
-							target.drop_l_hand()
-							target.drop_r_hand()
+							target.drop_held_items()
 						if(flash_strength > 5)
-							target.Weaken(2)
+							target.set_status(STAT_WEAK, 2)
 				else
 					flashfail = 1
 
@@ -84,17 +83,17 @@
 			var/mob/living/simple_animal/SA = target
 			var/safety = SA.eyecheck()
 			if(safety < FLASH_PROTECTION_MAJOR)
-				SA.Weaken(2)
+				SA.set_status(STAT_WEAK, 2)
 				if(safety < FLASH_PROTECTION_MODERATE)
-					SA.Stun(flash_strength - 2)
+					target.stun_effect_act(flash_strength - 2)
 					SA.flash_eyes(2)
-					SA.eye_blurry += flash_strength
-					SA.confused += flash_strength
+					target.set_status(STAT_BLURRY, flash_strength)
+					target.set_status(STAT_CONFUSE, flash_strength)
 			else
 				flashfail = 1
 
 		else if(issilicon(target))
-			target.Weaken(rand(str_min, 6))
+			target.set_status(STAT_WEAK, rand(str_min, 6))
 
 		else
 			flashfail = 1
