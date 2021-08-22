@@ -34,8 +34,8 @@
 // Flare, allows you to flash someone with a burst from your glowy eyes, provided they're enabled.
 /decl/psionic_power/energistics/flare
 	name =				"Flare"
-	cost =				10
-	cooldown =			75
+	cost =				20
+	cooldown =			80
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"With your Psi-Ocular Luminescence active, target the eyes while on harm intent in melee range to unleash a burst of light and stun the target."
@@ -58,7 +58,7 @@
 		var/flash_strength = (rand(str_min, str_min * user.psi.get_rank(PSI_ENERGISTICS)))
 
 		if(iscarbon(target))
-			if(target.stat!=DEAD)
+			if(target.stat != DEAD)
 				var/mob/living/carbon/C = target
 				var/safety = C.eyecheck()
 				if(safety < FLASH_PROTECTION_MODERATE)
