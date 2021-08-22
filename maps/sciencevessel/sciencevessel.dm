@@ -16,6 +16,8 @@
 	#include "../../mods/species/vox/_vox.dme"
 	#include "../../mods/species/adherent/_adherent.dme"
 
+	#include "../../mods/content/psionics/_psionics.dme"
+
 	#include "../away/bearcat/bearcat.dm"
 	#include "../away/casino/casino.dm"
 	#include "../away/derelict/derelict.dm"

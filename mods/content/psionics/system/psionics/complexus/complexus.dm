@@ -1,38 +1,41 @@
 /datum/psi_complexus
 
-	var/announced = FALSE             // Whether or not we have been announced to our holder yet.
-	var/suppressed = TRUE             // Whether or not we are suppressing our psi powers.
-	var/use_psi_armour = TRUE         // Whether or not we should automatically deflect/block incoming damage.
-	var/rebuild_power_cache = TRUE    // Whether or not we need to rebuild our cache of psi powers.
+	var/announced = FALSE				// Whether or not we have been announced to our holder yet.
+	var/suppressed = TRUE				// Whether or not we are suppressing our psi powers.
+	var/use_psi_armour = TRUE			// Whether or not we should automatically deflect/block incoming damage.
+	var/use_eye_glow = FALSE			// Whether or not we're making our eyes glow our chosen colour.
+	var/rebuild_power_cache = TRUE		// Whether or not we need to rebuild our cache of psi powers.
 
-	var/rating = 0                    // Overall psi rating.
-	var/cost_modifier = 1             // Multiplier for power use stamina costs.
-	var/stun = 0                      // Number of process ticks we are stunned for.
-	var/next_power_use = 0            // world.time minimum before next power use.
-	var/stamina = 50                  // Current psi pool.
-	var/max_stamina = 50              // Max psi pool.
-	var/armor_cost = 0                // Amount of power to substract this tick from psi armor blocking damage.
+	var/rating = 0						// Overall psi rating.
+	var/cost_modifier = 1				// Multiplier for power use stamina costs.
+	var/stun = 0						// Number of process ticks we are stunned for.
+	var/next_power_use = 0				// world.time minimum before next power use.
+	var/stamina = 50					// Current psi pool.
+	var/max_stamina = 50				// Max psi pool.
+	var/armor_cost = 0					// Amount of power to substract this tick from psi armor blocking damage.
 
-	var/list/latencies                // List of all currently latent faculties.
-	var/list/ranks                    // Assoc list of psi faculties to current rank.
-	var/list/base_ranks               // Assoc list of psi faculties to base rank, in case reset is needed
-	var/list/manifested_items         // List of atoms manifested/maintained by psychic power.
-	var/next_latency_trigger = 0      // world.time minimum before a trigger can be attempted again.
+	var/list/latencies					// List of all currently latent faculties.
+	var/list/ranks						// Assoc list of psi faculties to current rank.
+	var/list/base_ranks					// Assoc list of psi faculties to base rank, in case reset is needed
+	var/list/manifested_items			// List of atoms manifested/maintained by psychic power.
+	var/next_latency_trigger = 0		// world.time minimum before a trigger can be attempted again.
 	var/last_aura_size
 	var/last_aura_alpha
 	var/last_aura_color
 	var/aura_color = "#ff0022"
+	var/eye_glow_colour = "#ff0022"
+	var/eye_glow_level = 1
 
 	// Cached powers.
-	var/list/melee_powers             // Powers used in melee range.
-	var/list/grab_powers              // Powers use by using a grab.
-	var/list/ranged_powers            // Powers used at range.
-	var/list/manifestation_powers     // Powers that create an item.
-	var/list/powers_by_faculty        // All powers within a given faculty.
+	var/list/melee_powers				// Powers used in melee range.
+	var/list/grab_powers				// Powers use by using a grab.
+	var/list/ranged_powers				// Powers used at range.
+	var/list/manifestation_powers		// Powers that create an item.
+	var/list/powers_by_faculty			// All powers within a given faculty.
 
-	var/obj/screen/psi/hub/ui	      // Reference to the master psi UI object.
-	var/mob/living/owner              // Reference to our owner.
-	var/image/_aura_image             // Client image
+	var/obj/screen/psi/hub/ui			// Reference to the master psi UI object.
+	var/mob/living/owner				// Reference to our owner.
+	var/image/_aura_image				// Client image
 
 /datum/psi_complexus/proc/get_aura_image()
 	if(_aura_image && !istype(_aura_image))

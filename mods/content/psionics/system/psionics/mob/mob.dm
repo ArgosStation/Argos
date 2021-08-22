@@ -59,3 +59,18 @@
 	. = ..()
 	if(psi)
 		. += get_extension(psi, /datum/extension/armor)
+
+/mob/living/carbon/human/proc/process_psi_vision()
+	// Coercion and energistics get thermal vision.
+	if(psi.get_rank(PSI_COERCION) >= PSI_RANK_OPERANT || psi.get_rank(PSI_ENERGISTICS) >= PSI_RANK_OPERANT)
+		equipment_vision_flags |= SEE_MOBS
+	// Psychokinesis gets meson vision.
+	if(psi.get_rank(PSI_PSYCHOKINESIS) >= PSI_RANK_OPERANT)
+		equipment_vision_flags |= SEE_TURFS
+		if(equipment_see_invis)
+			equipment_see_invis = min(equipment_see_invis, SEE_INVISIBLE_NOLIGHTING)
+		else
+			equipment_see_invis = SEE_INVISIBLE_NOLIGHTING
+	// Redaction gets med HUD vision.
+	if(psi.get_rank(PSI_REDACTION) >= PSI_RANK_OPERANT)
+		process_med_hud(src, 1)

@@ -20,13 +20,16 @@
 		return FALSE
 	. = ..()
 
+// ----- OPERANT POWERS -----
+
+// Skinsight, allows you to medical scan someone without a health analyzer.
 /decl/psionic_power/redaction/skinsight
-	name =            "Skinsight"
-	cost =            3
-	cooldown =        30
-	use_grab =        TRUE
-	min_rank =        PSI_RANK_OPERANT
-	use_description = "Grab a patient, target the chest, then switch to help intent and use the grab on them to perform a check for wounds and damage."
+	name =				"Skinsight"
+	cost =				6
+	cooldown =			35
+	use_grab =			TRUE
+	min_rank =			PSI_RANK_OPERANT
+	use_description =	"Grab a patient, target the chest, then switch to help intent and use the grab on them to perform a check for wounds and damage."
 
 /decl/psionic_power/redaction/skinsight/invoke(var/mob/living/user, var/mob/living/target)
 	if(user.zone_sel.selecting != BP_CHEST)
@@ -37,13 +40,14 @@
 		to_chat(user, medical_scan_results(target, TRUE, SKILL_MAX))
 		return TRUE
 
+// Mend, allows you to heal organic limbs and organs by touch. Healing potential scales with Redaction rank.
 /decl/psionic_power/redaction/mend
-	name =            "Mend"
-	cost =            7
-	cooldown =        50
-	use_melee =       TRUE
-	min_rank =        PSI_RANK_OPERANT
-	use_description = "Target a patient while on help intent at melee range to mend a variety of maladies, such as bleeding or broken bones. Higher ranks in this faculty allow you to mend a wider range of problems."
+	name =				"Mend"
+	cost =				14
+	cooldown =			60
+	use_melee =			TRUE
+	min_rank =			PSI_RANK_OPERANT
+	use_description =	"Target a patient while on help intent at melee range to mend a variety of maladies, such as bleeding or broken bones. Higher ranks in this faculty allow you to mend a wider range of problems."
 
 /decl/psionic_power/redaction/mend/invoke(var/mob/living/user, var/mob/living/carbon/human/target)
 	if(!istype(user) || !istype(target))
@@ -109,19 +113,22 @@
 				if(!BP_IS_PROSTHETIC(I) && !BP_IS_CRYSTAL(I) && I.damage > 0)
 					to_chat(user, SPAN_NOTICE("You encourage the damaged tissue of \the [I] to repair itself."))
 					var/heal_rate = redaction_rank
-					I.damage = max(0, I.damage - rand(heal_rate,heal_rate*2))
+					I.damage = max(0, I.damage - rand(heal_rate, heal_rate*2))
 					return TRUE
 
 		to_chat(user, SPAN_NOTICE("You can find nothing within \the [target]'s [E.name] to mend."))
 		return FALSE
 
+// ----- GRANDMASTER POWERS -----
+
+// Cleanse, allows you to remove radiation and heal genetic damage from someone.
 /decl/psionic_power/redaction/cleanse
-	name =            "Cleanse"
-	cost =            9
-	cooldown =        60
-	use_melee =       TRUE
-	min_rank =        PSI_RANK_GRANDMASTER
-	use_description = "Target a patient while on help intent at melee range to cleanse radiation and genetic damage from a patient."
+	name =				"Cleanse"
+	cost =				18
+	cooldown =			80
+	use_melee =			TRUE
+	min_rank =			PSI_RANK_GRANDMASTER
+	use_description =	"Target a patient while on help intent at melee range to cleanse radiation and genetic damage from a patient."
 
 /decl/psionic_power/redaction/cleanse/invoke(var/mob/living/user, var/mob/living/carbon/human/target)
 	if(!istype(user) || !istype(target))
@@ -147,14 +154,17 @@
 		to_chat(user, SPAN_NOTICE("You can find no genetic damage or radiation to heal within \the [target]."))
 		return TRUE
 
+// ----- PARAMOUNT POWERS -----
+
+// Revive, allows you to bring someone back from the dead.
 /decl/psionic_power/revive
-	name =            "Revive"
-	cost =            25
-	cooldown =        80
-	use_grab =        TRUE
-	min_rank =        PSI_RANK_PARAMOUNT
-	faculty =         PSI_REDACTION
-	use_description = "Obtain a grab on a dead target, target the head, then select help intent and use the grab against them to attempt to bring them back to life. The process is lengthy and failure is punished harshly."
+	name =				"Revive"
+	cost =				38
+	cooldown =			120
+	use_grab =			TRUE
+	min_rank =			PSI_RANK_PARAMOUNT
+	faculty =			PSI_REDACTION
+	use_description =	"Obtain a grab on a dead target, target the head, then select help intent and use the grab against them to attempt to bring them back to life. The process is lengthy and failure is punished harshly."
 	admin_log = FALSE
 
 /decl/psionic_power/revive/invoke(var/mob/living/user, var/mob/living/target)
