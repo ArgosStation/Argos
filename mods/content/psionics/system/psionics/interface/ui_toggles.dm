@@ -35,6 +35,10 @@
 		return
 
 	var/list/click_params = params2list(params)
+	if(click_params["shift"])
+		// Placeholder for info popup on shift click a la psi_hub button.
+		return
+
 	if(click_params["alt"])
 		if(ishuman(owner))
 			var/new_glow = input("Please select luminescence colour.", "Luminescence Colour", owner.psi.eye_glow_colour) as color|null

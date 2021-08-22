@@ -60,6 +60,9 @@
 			add_clothing_protection(wear_mask)
 		if(istype(back,/obj/item/rig))
 			process_rig(back)
+		if(psi)
+			if(psi.use_eye_glow)
+				process_psi_vision()
 
 /mob/living/carbon/human/proc/process_glasses(var/obj/item/clothing/glasses/G)
 	if(G)
