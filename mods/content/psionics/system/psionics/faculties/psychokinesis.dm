@@ -45,7 +45,7 @@
 /decl/psionic_power/psychokinesis/tinker
 	name =				"Tinker"
 	cost =				15
-	cooldown =			15
+	cooldown =			20
 	min_rank =			PSI_RANK_MASTER
 	use_description =	"Click on or otherwise activate an empty hand while on help intent to manifest a psychokinetic tool. Use it in-hand to switch between tool types."
 	admin_log =			FALSE
@@ -106,11 +106,11 @@
 
 // ----- PARAMOUNT POWERS -----
 
-// Teleport, allows you to locally teleport short distances.
+// Translocate, allows you to locally teleport short distances.
 /decl/psionic_power/psychokinesis/teleport
 	name =				"Translocate"
 	cost =				38
-	cooldown =			200
+	cooldown =			180
 	use_ranged =		TRUE
 	use_manifest =		FALSE
 	min_rank =			PSI_RANK_PARAMOUNT

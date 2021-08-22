@@ -44,7 +44,7 @@
 /decl/psionic_power/redaction/mend
 	name =				"Mend"
 	cost =				14
-	cooldown =			75
+	cooldown =			60
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"Target a patient while on help intent at melee range to mend a variety of maladies, such as bleeding or broken bones. Higher ranks in this faculty allow you to mend a wider range of problems."
