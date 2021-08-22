@@ -5,6 +5,7 @@
 /datum/gear/union_card
 	display_name = "union membership"
 	path = /obj/item/card/union
+	cost = 0
 
 /datum/gear/union_card/spawn_on_mob(var/mob/living/carbon/human/H, var/metadata)
 	. = ..()
@@ -124,6 +125,7 @@
 	display_name = "passport"
 	path = /obj/item/passport
 	custom_setup_proc = /obj/item/passport/proc/set_info
+	cost = 0
 
 /datum/gear/mirror
 	display_name = "handheld mirror"

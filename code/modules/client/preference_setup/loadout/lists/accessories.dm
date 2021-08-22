@@ -57,18 +57,22 @@
 /datum/gear/accessory/armband_security
 	display_name = "security armband"
 	path = /obj/item/clothing/accessory/armband
+	cost = 0
 
 /datum/gear/accessory/armband_cargo
 	display_name = "cargo armband"
 	path = /obj/item/clothing/accessory/armband/cargo
+	cost = 0
 
 /datum/gear/accessory/armband_medical
 	display_name = "medical armband"
 	path = /obj/item/clothing/accessory/armband/med
+	cost = 0
 
 /datum/gear/accessory/armband_engineering
 	display_name = "engineering armband"
 	path = /obj/item/clothing/accessory/armband/engine
+	cost = 0
 
 /datum/gear/accessory/ftupin
 	display_name = "Free Trade Union pin"
