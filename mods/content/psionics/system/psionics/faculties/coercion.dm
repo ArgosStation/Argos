@@ -21,7 +21,7 @@
 // Psi-assay, lets you tell if someone else is psionic or not.
 /decl/psionic_power/coercion/assay
 	name =				"Assay"
-	cost =				15
+	cost =				30
 	cooldown =			100
 	use_grab =			TRUE
 	min_rank =			PSI_RANK_OPERANT
@@ -46,8 +46,8 @@
 // Focus, lets you remove hallucination and drowsiness from someone. Grandmaster+ can also cure paralysis.
 /decl/psionic_power/coercion/focus
 	name =				"Focus"
-	cost =				10
-	cooldown =			80
+	cost =				20
+	cooldown =			100
 	use_grab =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"Grab a patient, target the mouth, then use the grab on them while on disarm intent, in order to cure ailments of the mind."
@@ -78,8 +78,8 @@
 // Mindread, forcing someone to answer a question that you project directly into their head.
 /decl/psionic_power/coercion/mindread
 	name =				"Read Mind"
-	cost =				6
-	cooldown =			80
+	cost =				12
+	cooldown =			100
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"Target the head on disarm intent at melee range to attempt to read a victim's surface thoughts."
@@ -117,8 +117,8 @@
 // Agony, allows you to psionically stunbaton someone with a bare hand.
 /decl/psionic_power/coercion/agony
 	name =				"Agony"
-	cost =				8
-	cooldown =			50
+	cost =				30
+	cooldown =			80
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_MASTER
 	use_description =	"Target the chest or groin on disarm intent to use a melee attack equivalent to a strike from a stun baton."
@@ -138,7 +138,7 @@
 // Spasm, allows you ranged attack someone's hand or arm with a chance to make them drop whatever they're holding.
 /decl/psionic_power/coercion/spasm
 	name =				"Spasm"
-	cost =				15
+	cost =				30
 	cooldown =			100
 	use_melee =			TRUE
 	use_ranged =		TRUE
@@ -171,7 +171,7 @@
 // Blindstrike, allows you to radially blind, deafen and disorient anyone near you.
 /decl/psionic_power/coercion/blindstrike
 	name =				"Blindstrike"
-	cost =				8
+	cost =				16
 	cooldown =			120
 	use_ranged =		TRUE
 	use_melee =			TRUE
@@ -208,7 +208,7 @@
 // Mindslave, allows you to make someone a mindless thrall akin to a vampire.
 /decl/psionic_power/coercion/mindslave
 	name =				"Mindslave"
-	cost =				28
+	cost =				38
 	cooldown =			200
 	use_grab =			TRUE
 	min_rank =			PSI_RANK_PARAMOUNT

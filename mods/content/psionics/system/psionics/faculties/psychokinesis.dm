@@ -14,8 +14,8 @@
 // Psiblade, allows you to manifest a psychic blade. Lethality increases with Psychokinesis rank.
 /decl/psionic_power/psychokinesis/psiblade
 	name =				"Psiblade"
-	cost =				10
-	cooldown =			30
+	cost =				25
+	cooldown =			100
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"Click on or otherwise activate an empty hand while on harm intent to manifest a psychokinetic cutting blade. The power the blade will vary based on your mastery of the faculty."
 	admin_log =			FALSE
@@ -40,8 +40,8 @@
 // Tinker, allows you to manifest psychokinetic tools.
 /decl/psionic_power/psychokinesis/tinker
 	name =				"Tinker"
-	cost =				5
-	cooldown =			10
+	cost =				15
+	cooldown =			15
 	min_rank =			PSI_RANK_MASTER
 	use_description =	"Click on or otherwise activate an empty hand while on help intent to manifest a psychokinetic tool. Use it in-hand to switch between tool types."
 	admin_log =			FALSE
@@ -58,8 +58,8 @@
 // Telekinesis, allows you to manipulate objects, mobs and machinery at a distance.
 /decl/psionic_power/psychokinesis/telekinesis
 	name =				"Telekinesis"
-	cost =				5
-	cooldown =			10
+	cost =				15
+	cooldown =			20
 	use_ranged =		TRUE
 	use_manifest =		FALSE
 	min_rank =			PSI_RANK_GRANDMASTER
@@ -105,8 +105,8 @@
 // Teleport, allows you to locally teleport short distances.
 /decl/psionic_power/psychokinesis/teleport
 	name =				"Teleport"
-	cost =				28
-	cooldown =			150
+	cost =				38
+	cooldown =			200
 	use_ranged =		TRUE
 	use_manifest =		FALSE
 	min_rank =			PSI_RANK_PARAMOUNT

@@ -25,8 +25,8 @@
 // Skinsight, allows you to medical scan someone without a health analyzer.
 /decl/psionic_power/redaction/skinsight
 	name =				"Skinsight"
-	cost =				3
-	cooldown =			30
+	cost =				6
+	cooldown =			35
 	use_grab =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"Grab a patient, target the chest, then switch to help intent and use the grab on them to perform a check for wounds and damage."
@@ -43,8 +43,8 @@
 // Mend, allows you to heal organic limbs and organs by touch. Healing potential scales with Redaction rank.
 /decl/psionic_power/redaction/mend
 	name =				"Mend"
-	cost =				7
-	cooldown =			50
+	cost =				14
+	cooldown =			75
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"Target a patient while on help intent at melee range to mend a variety of maladies, such as bleeding or broken bones. Higher ranks in this faculty allow you to mend a wider range of problems."
@@ -124,8 +124,8 @@
 // Cleanse, allows you to remove radiation and heal genetic damage from someone.
 /decl/psionic_power/redaction/cleanse
 	name =				"Cleanse"
-	cost =				9
-	cooldown =			60
+	cost =				18
+	cooldown =			80
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_GRANDMASTER
 	use_description =	"Target a patient while on help intent at melee range to cleanse radiation and genetic damage from a patient."
@@ -159,8 +159,8 @@
 // Revive, allows you to bring someone back from the dead.
 /decl/psionic_power/revive
 	name =				"Revive"
-	cost =				25
-	cooldown =			80
+	cost =				38
+	cooldown =			120
 	use_grab =			TRUE
 	min_rank =			PSI_RANK_PARAMOUNT
 	faculty =			PSI_REDACTION
