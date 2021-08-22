@@ -47,10 +47,13 @@
 		var/obj/item/flame/candle/other_candle = A
 		other_candle.light()
 
-/obj/item/flame/candle/proc/light(mob/user)
+/obj/item/flame/candle/proc/light(var/mob/user, var/flavour_text)
 	if(!lit)
 		lit = 1
-		visible_message("<span class='notice'>\The [user] lights the [name].</span>")
+		if(!flavour_text)
+			visible_message(SPAN_NOTICE("\The [user] lights the [name]."))
+		else
+			visible_message(flavour_text)
 		set_light(candle_range, candle_power)
 		START_PROCESSING(SSobj, src)
 

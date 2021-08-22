@@ -139,7 +139,7 @@
 /decl/psionic_power/coercion/spasm
 	name =				"Spasm"
 	cost =				30
-	cooldown =			100
+	cooldown =			80
 	use_melee =			TRUE
 	use_ranged =		TRUE
 	min_rank =			PSI_RANK_MASTER

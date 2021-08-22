@@ -86,7 +86,7 @@
 	for(var/bp in held_item_slots)
 		var/datum/inventory_slot/inv_slot = LAZYACCESS(held_item_slots, bp)
 		var/obj/item/organ/external/E = organs_by_name[bp]
-		if(inv_slot?.holding)
+		if(inv_slot?.holding && !istype(inv_slot?.holding, /obj/item/psychic_power))
 			msg += "[G.He] [G.is] holding [inv_slot.holding.get_examine_line()] in [G.his] [E.name].\n"
 
 	//gloves

@@ -13,7 +13,7 @@
 /decl/psionic_power/energistics/spark
 	name =				"Spark"
 	cost =				8
-	cooldown =			10
+	cooldown =			15
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"Target a non-living target in melee range on harm intent to cause some sparks to appear. This can light fires."
@@ -27,15 +27,53 @@
 			var/obj/item/clothing/mask/smokable/cigarette/S = target
 			S.light("\The [user] snaps [G.his] fingers and \the [S] lights up.")
 			playsound(S.loc, "sparks", 50, 1)
+		else if(istype(target, /obj/item/flame/candle))
+			var/obj/item/flame/candle/S = target
+			S.light("[user] snaps \his fingers and \the [S.name] lights up.")
+			playsound(S.loc, "sparks", 50, 1)
+		else if(istype(target, /obj/item/flame/match))
+			var/obj/item/flame/match/S = target
+			if(!S.lit && !S.submerged())
+				S.lit = 1
+				S.damtype = "burn"
+				S.icon_state = "match_lit"
+				S.visible_message("[user] snaps \his fingers and \the [S.name] lights up.")
+				START_PROCESSING(SSobj, S)
+				playsound(S.loc, "sparks", 50, 1)
+				playsound(S.loc, 'sound/items/match.ogg', 60, 1, -4)
 		else
 			spark_at(get_turf(target))
 		return TRUE
+
+// Arc, allows you to manifest a small beam of energy that functions as a welding tool.
+/decl/psionic_power/energistics/arc
+	name =				"Arc"
+	cost =				16
+	cooldown =			30
+	use_melee =			TRUE
+	min_rank =			PSI_RANK_OPERANT
+	use_description =	"Click on or otherwise activate an empty hand while targeting the hands on harm intent to manifest a small beam of energy that functions as a welding tool. This can light fires."
+
+/decl/psionic_power/energistics/arc/invoke(var/mob/living/user, var/mob/living/target)
+	if((target && user != target) || user.a_intent != I_HURT)
+		return FALSE
+
+	if(!(user.zone_sel.selecting in list(BP_L_HAND, BP_R_HAND)))
+		return FALSE
+
+	. = ..()
+	if(.)
+		to_chat(user, SPAN_NOTICE("You begin projecting a small electrical arc from your hand."))
+		user.visible_message("<b>[user]</b> begins projecting a small electrical arc from \his hand.", \
+		"<b>[user]</b> begins projecting a small electrical arc from \his hand.")
+		sound_to(user, 'sound/effects/psi/power_fabrication.ogg')
+		return new /obj/item/psychic_power/arc_welder(user, user)
 
 // Flare, allows you to flash someone with a burst from your glowy eyes, provided they're enabled.
 /decl/psionic_power/energistics/flare
 	name =				"Flare"
 	cost =				20
-	cooldown =			80
+	cooldown =			60
 	use_melee =			TRUE
 	min_rank =			PSI_RANK_OPERANT
 	use_description =	"With your Psi-Ocular Luminescence active, target the eyes while on harm intent in melee range to unleash a burst of light and stun the target."
@@ -134,7 +172,7 @@
 /decl/psionic_power/energistics/zorch
 	name =				"Zorch"
 	cost =				25
-	cooldown =			80
+	cooldown =			60
 	use_ranged =		TRUE
 	min_rank =			PSI_RANK_MASTER
 	use_description =	"Use this ranged laser attack while on harm intent. Your mastery of Energistics will determine how powerful the laser is. Be wary of overuse, and try not to fry your own brain."

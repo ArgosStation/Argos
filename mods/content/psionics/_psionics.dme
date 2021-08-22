@@ -41,6 +41,7 @@
 #include "system\psionics\equipment\psipower_blade.dm"
 #include "system\psionics\equipment\psipower_tinker.dm"
 #include "system\psionics\equipment\psipower_tk.dm"
+#include "system\psionics\equipment\psipower_welder.dm"
 #include "system\psionics\events\_psi.dm"
 #include "system\psionics\events\mini_spasm.dm"
 #include "system\psionics\events\psi_balm.dm"
