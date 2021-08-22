@@ -49,7 +49,7 @@
 /datum/gear/accessory/stethoscope
 	display_name = "stethoscope (medical)"
 	path = /obj/item/clothing/accessory/stethoscope
-	cost = 2
+	cost = 1
 
 /datum/gear/utility/pen
 	display_name = "Multicolored Pen"
