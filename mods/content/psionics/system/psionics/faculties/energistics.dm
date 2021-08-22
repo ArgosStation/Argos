@@ -31,6 +31,84 @@
 			spark_at(get_turf(target))
 		return TRUE
 
+// Flare, allows you to flash someone with a burst from your glowy eyes, provided they're enabled.
+/decl/psionic_power/energistics/flare
+	name =				"Flare"
+	cost =				10
+	cooldown =			75
+	use_melee =			TRUE
+	min_rank =			PSI_RANK_OPERANT
+	use_description =	"With your Psi-Ocular Luminescence active, target the eyes while on harm intent in melee range to unleash a burst of light and stun the target."
+	use_sound =			'sound/effects/psi/power_flare.ogg'
+	var/str_min =		1.5
+
+/decl/psionic_power/energistics/flare/invoke(var/mob/living/user, var/mob/living/target)
+	if(user.zone_sel.selecting != BP_EYES)
+		return FALSE
+	if(!user.psi.use_eye_glow)
+		return FALSE
+	if(istype(target, /turf))
+		return FALSE
+	. = ..()
+	if(.)
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		user.do_attack_animation(target)
+
+		var/flashfail = 0
+		var/flash_strength = (rand(str_min, str_min * user.psi.get_rank(PSI_ENERGISTICS)))
+
+		if(iscarbon(target))
+			if(target.stat!=DEAD)
+				var/mob/living/carbon/C = target
+				var/safety = C.eyecheck()
+				if(safety < FLASH_PROTECTION_MODERATE)
+					if(ishuman(target))
+						var/mob/living/carbon/human/H = target
+						flash_strength = round(H.getFlashMod() * flash_strength)
+						if(safety > FLASH_PROTECTION_NONE)
+							flash_strength = (flash_strength / 2)
+					if(flash_strength > 0)
+						target.flash_eyes(FLASH_PROTECTION_MODERATE - safety)
+						target.Stun(flash_strength / 2)
+						target.eye_blurry += flash_strength
+						target.confused += (flash_strength + 2)
+						if(flash_strength > 3)
+							target.drop_l_hand()
+							target.drop_r_hand()
+						if(flash_strength > 5)
+							target.Weaken(2)
+				else
+					flashfail = 1
+
+		else if(isanimal(target))
+			var/mob/living/simple_animal/SA = target
+			var/safety = SA.eyecheck()
+			if(safety < FLASH_PROTECTION_MAJOR)
+				SA.Weaken(2)
+				if(safety < FLASH_PROTECTION_MODERATE)
+					SA.Stun(flash_strength - 2)
+					SA.flash_eyes(2)
+					SA.eye_blurry += flash_strength
+					SA.confused += flash_strength
+			else
+				flashfail = 1
+
+		else if(issilicon(target))
+			target.Weaken(rand(str_min, 6))
+
+		else
+			flashfail = 1
+
+		if(!flashfail)
+			if(!issilicon(target))
+				user.visible_message(SPAN_WARNING("[user] blinds [target] with a flare from their eyes!"))
+			else
+				user.visible_message(SPAN_NOTICE("[user] overloads [target]'s sensors with a flare from their eyes!"))
+		else
+			user.visible_message(SPAN_NOTICE("[user] fails to blind [target] with a flare from their eyes!"))
+
+		return TRUE
+
 // ----- MASTER POWERS -----
 
 // Disrupt, allows you to create a localised electromagnetic pulse against a nearby target.
