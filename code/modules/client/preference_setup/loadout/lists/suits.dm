@@ -115,7 +115,7 @@
 /datum/gear/suit/trenchcoat
 	display_name = "trenchcoat selection"
 	path = /obj/item/clothing/suit
-	cost = 3
+	cost = 2
 
 /datum/gear/suit/trenchcoat/get_gear_tweak_options()
 	. = ..()
@@ -136,4 +136,4 @@
 	display_name = "plain cloak"
 	path = /obj/item/clothing/accessory/cloak
 	flags = GEAR_HAS_COLOR_SELECTION
-	cost = 3
+	cost = 2

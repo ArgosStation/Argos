@@ -16,7 +16,7 @@
 /datum/gear/storage/bandolier
 	display_name = "bandolier"
 	path = /obj/item/clothing/accessory/storage/bandolier
-	cost = 3
+	cost = 2
 
 /datum/gear/storage/waistpack
 	display_name = "waist pack"

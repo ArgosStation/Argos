@@ -8,6 +8,7 @@
 	display_name = "gloves, colored"
 	flags = GEAR_HAS_COLOR_SELECTION
 	path = /obj/item/clothing/gloves/color
+	cost = 1
 
 /datum/gear/gloves/latex
 	display_name = "gloves, latex"

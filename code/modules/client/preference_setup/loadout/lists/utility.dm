@@ -64,7 +64,7 @@
 /datum/gear/utility/hand_labeler
 	display_name = "hand labeler"
 	path = /obj/item/hand_labeler
-	cost = 3
+	cost = 2
 
 /****************
 modular computers
@@ -73,17 +73,17 @@ modular computers
 /datum/gear/utility/cheaptablet
 	display_name = "tablet computer, cheap"
 	path = /obj/item/modular_computer/tablet/preset/custom_loadout/cheap
-	cost = 3
+	cost = 2
 
 /datum/gear/utility/normaltablet
 	display_name = "tablet computer, advanced"
 	path = /obj/item/modular_computer/tablet/preset/custom_loadout/advanced
-	cost = 4
+	cost = 3
 
 /datum/gear/utility/customtablet
 	display_name = "tablet computer, custom"
 	path = /obj/item/modular_computer/tablet
-	cost = 4
+	cost = 3
 
 /datum/gear/utility/customtablet/get_gear_tweak_options()
 	. = ..() | /datum/gear_tweak/tablet
@@ -91,9 +91,9 @@ modular computers
 /datum/gear/utility/cheaplaptop
 	display_name = "laptop computer, cheap"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/cheap
-	cost = 5
+	cost = 4
 
 /datum/gear/utility/normallaptop
 	display_name = "laptop computer, advanced"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced
-	cost = 6
+	cost = 5
