@@ -35,13 +35,37 @@
 		return
 
 	var/list/click_params = params2list(params)
-	if(click_params["shift"])
+	if(click_params["alt"])
 		if(ishuman(owner))
-			var/new_glow = input("Please select luminescence colour.", "Luminescence Colour", owner.psi.aura_color) as color|null
+			var/new_glow = input("Please select luminescence colour.", "Luminescence Colour", owner.psi.eye_glow_colour) as color|null
 			if(new_glow)
 				owner.psi.eye_glow_colour = new_glow
 				to_chat(owner, SPAN_NOTICE("You shift the colour of your Psi-Ocular Luminescence."))
-				return
+			
+			// Energistics psions get to have flashlight eyes as a 'modulation' of the power.
+			if(owner.psi.get_rank(PSI_ENERGISTICS) >= PSI_RANK_OPERANT)
+				var/list/possible_levels
+				switch(owner.psi.get_rank(PSI_ENERGISTICS))
+					if(PSI_RANK_OPERANT) // Operant
+						possible_levels = list(1, 1.5)
+					if(PSI_RANK_MASTER) // Master
+						possible_levels = list(1, 1.5)
+					if(PSI_RANK_GRANDMASTER) // Grandmaster
+						possible_levels = list(1, 1.5, 2)
+					if(PSI_RANK_PARAMOUNT) // Paramount
+						possible_levels = list(1, 1.5, 2, 2.5)
+				var/new_range = input("Please select luminescence brightness.", "Luminescence Brightness", owner.psi.eye_glow_level) as anything in possible_levels
+				if(new_range)
+					owner.psi.eye_glow_level = new_range
+					to_chat(owner, SPAN_NOTICE("You shift the brightness of your Psi-Ocular Luminescence."))
+			return
+
+	if(click_params["ctrl"])
+		if(ishuman(owner))
+			owner.psi.eye_glow_colour = owner.psi.aura_color
+			owner.psi.eye_glow_level = 1
+			to_chat(owner, SPAN_NOTICE("You reset the colour and brightness of your Psi-Ocular Luminescence."))
+			return
 
 	if(ishuman(owner))
 		var/mob/living/carbon/human/M = owner
@@ -49,8 +73,7 @@
 
 		var/eye_colour_prev
 
-		if(!click_params["shift"])
-			M.psi.use_eye_glow = !M.psi.use_eye_glow
+		M.psi.use_eye_glow = !M.psi.use_eye_glow
 
 		if(M.psi.use_eye_glow)
 			eye_colour_prev = M.eye_colour
@@ -63,7 +86,7 @@
 			M.change_eye_color(eye_colour_new)
 			H.glowing_eyes = TRUE
 
-			M.set_light(0.40, 1, 1, 2, M.psi.eye_glow_colour)
+			M.set_light(0.15 * M.psi.eye_glow_level, 1, 2, 2, M.psi.eye_glow_colour)
 		else
 			M.visible_message("<font color='[M.psi.eye_glow_colour]'><b>[M]'s</b> eyes return to a natural colour.</font>", \
 			SPAN_NOTICE("You are no longer using your psionics to emit a visible glow from your eyes."))

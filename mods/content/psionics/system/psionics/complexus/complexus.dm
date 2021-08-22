@@ -24,6 +24,7 @@
 	var/last_aura_color
 	var/aura_color = "#ff0022"
 	var/eye_glow_colour = "#ff0022"
+	var/eye_glow_level = 1
 
 	// Cached powers.
 	var/list/melee_powers				// Powers used in melee range.
